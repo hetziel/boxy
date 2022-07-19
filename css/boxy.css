@@ -199,7 +199,7 @@ hr {
     width: 8.3333333333%;
   }
 }
-@media (min-width: 480px) and (max-width: 575px) {
+@media (min-width: 480px) {
   .col-xs-12 {
     width: 100%;
   }
@@ -237,7 +237,7 @@ hr {
     width: 8.3333333333%;
   }
 }
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) {
   .col-sm-12 {
     width: 100%;
   }
@@ -275,7 +275,7 @@ hr {
     width: 8.3333333333%;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   .col-md-12 {
     width: 100%;
   }
@@ -313,7 +313,7 @@ hr {
     width: 8.3333333333%;
   }
 }
-@media (min-width: 1024px) and (max-width: 1199px) {
+@media (min-width: 1024px) {
   .col-12 {
     width: 100%;
   }
@@ -2061,145 +2061,41 @@ a[class^=b-btn] {
   color: var(--h-danger);
 }
 
-.isolate {
-  isolation: isolate;
-}
-
-.obj {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  border-radius: 50%;
-  mix-blend-mode: normal;
-}
-
-.first {
-  background: var(--h-primary);
-}
-
-.second {
-  background: white;
-  margin-left: 200px;
-}
-
-.third {
-  background: black;
-  margin-left: 100px;
-  margin-top: 200px;
-}
-
-.new {
+.b-table {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   padding: 5px;
-  width: 150px;
-  border: none;
-  position: relative;
-  transition: background 0.3s;
 }
-.new::before {
-  content: "";
-  position: absolute;
+.b-table table {
+  border-collapse: collapse;
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0%;
-  z-index: -1;
-  transition: background 0.3s;
 }
-.new[color=primary] {
-  background: var(--h-primary);
+.b-table table td,
+.b-table table th {
+  width: 30%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  min-width: 20px;
 }
-.new[color=primary]::before {
-  background-color: var(--h-primary-dark);
+
+pre {
+  padding: 5px;
 }
-.new[color=primary]:hover {
-  background: rgba(var(--h-primary-x), 0.5);
+
+[code] {
+  font-family: monospace !important;
+  display: inline-block;
+  background: var(--h-dark-3);
+  padding: 5px;
+  color: rgb(216, 216, 216);
+  font-size: 12px;
 }
-.new[color=primary]:active {
-  background: rgba(var(--h-primary-x), 0.2);
+[code] * {
+  font-family: monospace !important;
 }
-.new[color=secondary] {
-  background: var(--h-secondary);
-}
-.new[color=secondary]::before {
-  background-color: var(--h-secondary-dark);
-}
-.new[color=secondary]:hover {
-  background: rgba(var(--h-secondary-x), 0.5);
-}
-.new[color=secondary]:active {
-  background: rgba(var(--h-secondary-x), 0.2);
-}
-.new[color=success] {
-  background: var(--h-success);
-}
-.new[color=success]::before {
-  background-color: var(--h-success-dark);
-}
-.new[color=success]:hover {
-  background: rgba(var(--h-success-x), 0.5);
-}
-.new[color=success]:active {
-  background: rgba(var(--h-success-x), 0.2);
-}
-.new[color=warning] {
-  background: var(--h-warning);
-}
-.new[color=warning]::before {
-  background-color: var(--h-warning-dark);
-}
-.new[color=warning]:hover {
-  background: rgba(var(--h-warning-x), 0.5);
-}
-.new[color=warning]:active {
-  background: rgba(var(--h-warning-x), 0.2);
-}
-.new[color=danger] {
-  background: var(--h-danger);
-}
-.new[color=danger]::before {
-  background-color: var(--h-danger-dark);
-}
-.new[color=danger]:hover {
-  background: rgba(var(--h-danger-x), 0.5);
-}
-.new[color=danger]:active {
-  background: rgba(var(--h-danger-x), 0.2);
-}
-.new[color=info] {
-  background: var(--h-info);
-}
-.new[color=info]::before {
-  background-color: var(--h-info-dark);
-}
-.new[color=info]:hover {
-  background: rgba(var(--h-info-x), 0.5);
-}
-.new[color=info]:active {
-  background: rgba(var(--h-info-x), 0.2);
-}
-.new[color=light] {
-  background: var(--h-light);
-}
-.new[color=light]::before {
-  background-color: var(--h-light-2);
-}
-.new[color=light]:hover {
-  background: rgba(var(--h-light-x), 0.5);
-}
-.new[color=light]:active {
-  background: rgba(var(--h-light-x), 0.2);
-}
-.new[color=dark] {
-  background: var(--h-dark);
-}
-.new[color=dark]::before {
-  background-color: #000;
-}
-.new[color=dark]:hover {
-  background: rgba(var(--h-dark-x), 0.8);
-}
-.new[color=dark]:active {
-  background: rgba(0, 0, 0, 0);
+
+.fit-content {
+  width: fit-content;
 }
 
 .h-nav-header {
@@ -2263,7 +2159,7 @@ a[class^=b-btn] {
 }
 
 .boxy-version::before {
-  content: "Boxy: 0.1.1.1912";
+  content: "Boxy: 0.1.1.1916";
 }
 
 /*# sourceMappingURL=boxy.css.map */
