@@ -402,6 +402,7 @@ hr {
   flex: 1 0 100%;
   position: sticky;
   top: 0;
+  overflow: hidden;
 }
 .b-header .b-logo-title {
   color: white;
@@ -699,6 +700,7 @@ hr {
 .b-btn[color=default],
 .b-btn-push[color=default],
 .b-btn-gate[color=default] {
+  color: var(--h-light);
   background: rgba(255, 255, 255, 0.1);
 }
 .b-btn[color=default]::before,
@@ -719,7 +721,6 @@ hr {
 .b-btn[color=alternate],
 .b-btn-push[color=alternate],
 .b-btn-gate[color=alternate] {
-  color: var(--h-light);
   background: rgba(0, 0, 0, 0.1);
 }
 .b-btn[color=alternate]::before,
@@ -1192,6 +1193,10 @@ a[class^=b-btn] {
   text-align: center;
 }
 
+.b-fs-sm {
+  font-size: 10px;
+}
+
 [class^=tt],
 [class^=st] {
   font-weight: bold;
@@ -1281,6 +1286,10 @@ a[class^=b-btn] {
 
 .mb-1 {
   margin-bottom: 0.5em;
+}
+
+.mb-2 {
+  margin-bottom: 1em;
 }
 
 .me-1 {
@@ -2066,6 +2075,7 @@ a[class^=b-btn] {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 5px;
+  overflow: auto;
 }
 .b-table table {
   border-collapse: collapse;
@@ -2076,6 +2086,7 @@ a[class^=b-btn] {
   width: 30%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   min-width: 20px;
+  padding: 0.5em 2em;
 }
 
 pre {
@@ -2096,6 +2107,22 @@ pre {
 
 .fit-content {
   width: fit-content;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.me-1-all > * {
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+.me-1-all > *:last-child {
+  margin-right: 0;
+}
+
+.ib {
+  display: inline-block;
 }
 
 .h-nav-header {
@@ -2159,7 +2186,7 @@ pre {
 }
 
 .boxy-version::before {
-  content: "Boxy: 0.1.1.1916";
+  content: "Boxy: 0.1.1.1918";
 }
 
 /*# sourceMappingURL=boxy.css.map */
