@@ -12,9 +12,10 @@
     <title>BOXY</title>
 </head>
 
-<body>
+<body bg-img="../img/md.jpg" fixed>
     <div class="b-header" gradient bg="primary">
         <a class="b-logo-title" href="../">BOXY</a>
+        <a href="start.html" class="b-btn" color="default">Start</a>
         <a href="https://docs.google.com/document/d/1ISIqMRtN6rF4XaEbVrnv7tebgu6knEvkulT8QvIlXw8/edit?usp=sharing" class="b-btn" color="default">Documentación</a>
 
         <div class="b-header-end">
@@ -23,9 +24,9 @@
     </div>
 
     <div class="h-body">
-        <div class="row">
-            <div class=" col-12 col-lg-8">
-                <div class="b-box m-1">
+        <div class="row jc-center">
+            <div class="col-12 col-lg-8">
+                <div class="b-box m-1" skin="blur" bg="light">
                     <div class="b-box-header"><span class="tt-md">Botones</span></div>
                     <div class="b-box-content">
 
@@ -47,7 +48,9 @@
                                     </td>
                                     <td>
                                         <ul>
-                                            <li>color</li>
+                                            <li>
+                                                <a href="#color">color</a>
+                                            </li>
                                             <li>bordered (Agrega bordes y quita enfoque)</li>
                                             <li>no-efx (Quita los efectos hover)</li>
                                             <li>no-focus (Quita el enfoque)</li>
@@ -66,7 +69,9 @@
                                     <td><button class="b-btn-push" color="primary">b-btn-push</button></td>
                                     <td>
                                         <ul>
-                                            <li>color</li>
+                                            <li>
+                                                <a href="#color">color</a>
+                                            </li>
                                             <li>bordered (Agrega bordes y quita enfoque)</li>
                                             <li>no-efx (Quita los efectos hover)</li>
 
@@ -86,7 +91,9 @@
                                     <td><button class="b-btn-gate" color="primary">b-btn-gate</button></td>
                                     <td>
                                         <ul>
-                                            <li>color</li>
+                                            <li>
+                                                <a href="#color">color</a>
+                                            </li>
                                         </ul>
                                     </td>
                                     <td></td>
@@ -105,7 +112,7 @@
 
                             </table>
                         </div>
-                        <span class="tt-sm ">Propiedades Propias</span>
+                        <span id="color" class="tt-sm ">Propiedades Propias</span>
 
                         <div class="b-table mb-2">
                             <table>
@@ -204,7 +211,7 @@
                             </table>
                         </div>
 
-                        <div class="b-box">
+                        <div class="b-box mb-2">
                             <div class="b-box-header"><span class="st-md">b-btn</span></div>
                             <div class="b-box-content me-1-all row jc-center">
 
@@ -231,7 +238,7 @@
                             </div>
 
                         </div>
-                        <div class="b-box">
+                        <div class="b-box mb-2">
                             <div class="b-box-header"><span class="st-md">b-btn-push</span></div>
                             <div class="b-box-content me-1-all row jc-center">
 
@@ -258,7 +265,7 @@
                             </div>
 
                         </div>
-                        <div class="b-box">
+                        <div class="b-box mb-2">
                             <div class="b-box-header"><span class="st-md">b-btn-gate</span></div>
                             <div class="b-box-content me-1-all row jc-center">
                                 <button class="b-btn-gate" color="primary">primary</button>
@@ -272,7 +279,7 @@
                                 <button class="b-btn-gate" color="link">link</button>
                             </div>
                         </div>
-                        <div class="b-box">
+                        <div class="b-box mb-2">
                             <div class="b-box-header"><span class="st-md">b-btn-gradient</span></div>
                             <div class="b-box-content me-1-all row jc-center">
                                 <button class="b-btn-gradient" color="primary">primary</button>
@@ -291,6 +298,7 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="../js/boxy.min.js"></script>
 </body>
 
 </html>
