@@ -1,52 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/boxy.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>BOXY</title>
-</head>
+  </head>
 
-<body bg-img="img/md.jpg" fixed>
+  <body bg-img="img/md.jpg" fixed>
     <div class="b-header" gradient bg="primary">
-        <a class="b-logo-title" href="/">BOXY</a>
-        <a href="pages/start.html" class="b-btn" color="default">Start</a>
-        <a href="https://docs.google.com/document/d/1ISIqMRtN6rF4XaEbVrnv7tebgu6knEvkulT8QvIlXw8/edit?usp=sharing" class="b-btn" color="default">Documentación</a>
-        <a href="pages/new.html" class="b-btn" color="default">Nuevas Implementaciones</a>
+      <a class="b-logo-title" href="/">BOXY</a>
 
-        <div class="b-header-end">
-            <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</a>
-        </div>
+      <div class="b-header-content">
+        <a href="pages/start.html" class="b-btn" color="default">Start</a>
+        <a
+          href="https://docs.google.com/document/d/1ISIqMRtN6rF4XaEbVrnv7tebgu6knEvkulT8QvIlXw8/edit?usp=sharing"
+          class="b-btn"
+          color="default"
+          >Documentación</a
+        >
+        <a href="pages/new.html" class="b-btn" color="default"
+          >Nuevas Implementaciones</a
+        >
+        <a href="pages/typography.html" class="b-btn" color="default"
+          >Tipografía</a
+        >
+      </div>
+      <div class="b-header-end">
+        <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"
+          ><i class="fa-brands fa-github"></i> Github</a
+        >
+      </div>
+      <div class="mobile" open="b-side-nav">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div b-side-nav>
+      <a class="closebtn" close>&times;</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Request Quote</a>
+      <a href="#">Contact</a>
+      <p style="color: #1c3664; text-align: center">Hubover &copy; 2017</p>
     </div>
 
     <div class="h-body">
-        <div class="row">
-            <div class="col-12 tc">
-                <h1>Bienvenidos a Boxy</h1>
+      <div class="row">
+        <div class="col-12 tc">
+          <h1>Bienvenidos a Boxy</h1>
 
-                <div class="b-box m-1" skin="blur" bg="light">
-                    <div class="b-box-header"><span class="tt-md" tx="dark">¿Qué es Boxy?</span></div>
-                    <div class="b-box-content" tx="secondary">Boxy es un framework de CSS orientado al diseño web, y utiliza tecnologías de JavaScript para darle vida a las animaciones creado por Hetziel y mantenido por un grupo de latinoamericanos voluntarios, si deseas colaborar voluntariamente
-                        o hacer una donación para que siga creciendo, te lo agradeceríamos mucho. Para más información contactame.</div>
-                </div>
+          <div class="b-box m-1" skin="blur" bg="light">
+            <div class="b-box-header"
+              ><span class="tt-md" tx="dark">¿Qué es Boxy?</span></div
+            >
+            <div class="b-box-content" tx="secondary"
+              >Boxy es un framework de CSS orientado al diseño web, y utiliza
+              tecnologías de JavaScript para darle vida a las animaciones creado
+              por Hetziel y mantenido por un grupo de latinoamericanos
+              voluntarios, si deseas colaborar voluntariamente o hacer una
+              donación para que siga creciendo, te lo agradeceríamos mucho. Para
+              más información contactame.</div
+            >
+          </div>
 
-                <span class="boxy-version"></span>
+          <span class="boxy-version"></span>
 
-                <div class="row jc-center mt-1">
-                    <a href="pages/typography.html" class="b-btn-push me-1" color="success">Tipografía</a>
-                    <a href="pages/buttons.html" class="b-btn-push" color="danger">Botones</a>
-                </div>
-
-            </div>
+          <div class="row jc-center mt-1">
+            <a
+              href="pages/typography.html"
+              class="b-btn-push me-1"
+              color="success"
+              >Tipografía</a
+            >
+            <a href="pages/buttons.html" class="b-btn-push" color="danger"
+              >Botones</a
+            >
+          </div>
         </div>
+      </div>
     </div>
     <script type="text/javascript" src="../js/boxy.min.js"></script>
-
-</body>
-
+  </body>
 </html>
