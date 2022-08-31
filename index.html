@@ -21,29 +21,21 @@
     <title>BOXY</title>
   </head>
 
-  <body bg-img="img/md.jpg" fixed>
+  <body>
     <div class="b-header" gradient bg="primary">
-      <a class="b-logo-title" href="/">BOXY</a>
-
+      <a href="/" class="b-logo-title">BOXY</a>
       <div class="b-header-content">
-        <a href="pages/start.html" class="b-btn" color="default">Start</a>
-        <a
-          href="https://docs.google.com/document/d/1ISIqMRtN6rF4XaEbVrnv7tebgu6knEvkulT8QvIlXw8/edit?usp=sharing"
-          class="b-btn"
-          color="default"
-          >Documentación</a
-        >
-        <a href="pages/new.html" class="b-btn" color="default"
-          >Nuevas Implementaciones</a
-        >
-        <a href="pages/typography.html" class="b-btn" color="default"
-          >Tipografía</a
-        >
+        <a href="pages/start.html" class="b-btn" color="default">Empieza ahora</a>
+        <a href="pages/cards.html" class="b-btn" color="default">Cards</a>
+        <a href="pages/inputs.html" class="b-btn" color="success">Inputs</a>
       </div>
       <div class="b-header-end">
-        <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"
-          ><i class="fa-brands fa-github"></i> Github</a
+        <a href="pages/plantilla-hetz.html" class="b-btn" color="default"
+          >Plantilla</a
         >
+        <a href="pages/test.html" class="b-btn" color="default">Test</a>
+            <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</a>
+
       </div>
       <div class="mobile" open="b-side-nav">
         <i class="fa-solid fa-bars"></i>
@@ -51,22 +43,42 @@
     </div>
     <div b-side-nav>
       <a class="closebtn" close>&times;</a>
-      <a
-      href="https://docs.google.com/document/d/1ISIqMRtN6rF4XaEbVrnv7tebgu6knEvkulT8QvIlXw8/edit?usp=sharing"
-      >Documentación</a
-    >
-    <a href="pages/new.html"
-      >Nuevas Implementaciones</a
-    >
-    <a href="pages/typography.html"
-      >Tipografía</a
-    >
-    <a href="https://github.com/hetziel/boxy"><i class="fa-brands fa-github"></i> Github</a
-        >
-      <p style="color: #1c3664; text-align: center">Boxy &copy; 2022</p>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Request Quote</a>
+        <a href="#">Contact</a>
+        <p style="color: #1c3664; text-align: center">Hubover &copy; 2017</p>
     </div>
 
-    <div class="h-body">
+    <div class="b-body">
+      <div id="side-primero" class="b-side" size="xl" color="white">
+
+            <button class="b-nav-header">Empezando</button>
+            <div class="b-nav-content">
+                <a href="pages/start.html" class="b-btn w-100 m-1" color="primary">Instalación</a>
+            </div>
+
+            <button class="b-nav-header">Nuevas características</button>
+            <div class="b-nav-content">
+                <button class="b-btn w-100 m-1" color="primary">Botones</button>
+                <button class="b-btn-push w-100 m-1" color="primary">Tipografía</button>
+            </div>
+
+            <button class="b-nav-header">Contenido</button>
+            <div class="b-nav-content">
+                <a href="pages/typography.html" class="b-btn w-100 m-1" color="secondary" rd="none">Tipografía</a>
+            </div>
+
+            <button class="b-nav-header">Componentes</button>
+            <div class="b-nav-content">
+              <a href="pages/buttons.html" class="b-btn w-100 m-1" color="secondary" rd="none">Botones</a>
+              <a href="pages/modal.html" class="b-btn w-100 m-1" color="secondary" rd="none">Modal</a>
+            </div>
+    </div>
+     <div class="b-main" bg-img="img/md.jpg">
+      <div class="toggle" onclick="sideToggle('primero')"><i tx="light" class="fa-brands fa-github"></i> </div>
+
       <div class="row">
         <div class="col-12 tc">
           <h1>Bienvenidos a Boxy</h1>
@@ -81,26 +93,61 @@
               por Hetziel y mantenido por un grupo de latinoamericanos
               voluntarios, si deseas colaborar voluntariamente o hacer una
               donación para que siga creciendo, te lo agradeceríamos mucho. Para
-              más información contactame.</div
+              más información contactamos.</div
             >
           </div>
 
           <span class="boxy-version"></span>
 
+          <div class="b-box m-1" bg="light">
+            <div class="b-box-header">
+              <span class="tt-md" tx="dark">Nuevas características</span>
+            </div>
+            <div class="b-box-content">
           <div class="row jc-center mt-1">
+                <a href="pages/start.html" class="b-btn-gradient me-1" color="primary">Empieza ahora</a>
             <a
               href="pages/typography.html"
               class="b-btn-push me-1"
               color="success"
               >Tipografía</a
             >
-            <a href="pages/buttons.html" class="b-btn-push" color="danger"
+                <a href="pages/buttons.html" class="b-btn-push me-1" color="danger"
               >Botones</a
             >
+
+                <button class="b-btn-push" color="primary" open-modal="1">Modal</button>
+
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
+     </div>
     </div>
-    <script type="text/javascript" src="../js/boxy.min.js"></script>
+      <!-- Modales -->
+      <div modal="1" class="b-modal-wrapper" skin="blur" position="2" in-out>
+        <div class="b-modal-content" skin="transparent">
+            <div class="b-modal-head">
+                <span class="b-modal-title">Este es el componente de modal</span>
+                <button close-modal class="b-btn-icon" close-modal>&times;</button>
+            </div>
+            <div class="b-modal-body">
+                <div class="b-card-container w-100" bg="light">
+                    <div class="b-card-header" st="radius">
+                        <span class="tt-sm">Tarjetas personalizadas</span>
+                    </div>
+                    <div class="b-card-content" st="radius">
+                    </div>
+                    <div class="b-card-footer" st="radius">
+                        <button class="b-btn w-100" color="primary">Submit</button>
+                    </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script src="js/boxy.min.js"></script>
   </body>
 </html>
