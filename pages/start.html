@@ -15,9 +15,7 @@
 <body bg-img="../img/md.jpg" fixed>
     <div class="b-header" gradient bg="primary">
         <a class="b-logo-title" href="../">BOXY</a>
-        <a href="start.html" class="b-btn" color="default">Start</a>
-        <a href="https://docs.google.com/document/d/1ISIqMRtN6rF4XaEbVrnv7tebgu6knEvkulT8QvIlXw8/edit?usp=sharing" class="b-btn" color="default">Documentación</a>
-
+        <a href="/" class="b-btn" color="default">Atrás</a>
         <div class="b-header-end">
             <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</a>
         </div>
@@ -31,29 +29,57 @@
                         <div class="b-box-header"><span class="tt-md">Comienza con Boxy</span>
                             <div class="b-box-content">
                                 <p>
-                                    Boxy es un Framework orientado al diseño web, y utiliza tecnologías de JavaScript para darle vida a las animaciones.
+                                    Boxy es un Framework orientado al Front-end para tener una apariencia elegante, con multiples funciones para facilitar el desarrollo.
                                 </p>
-                                <span tx="danger">Estas clases están en espera de aprobación.</span>
                                 <p>Se ha formulado una estandarización para los tamaños del texto de encabezado.</p>
                                 <div class="b-box" skin="blur" bg="light">
-                                    <div class="b-box-header">Inicio rápido</div>
+                                    <div class="b-box-header"><span class="tt-sm">Inicio rápido</span></div>
                                     <div class="b-box-content">
                                         <p>
-                                            Comience incluyendo el CSS y JavaScript listos para producción de Bootstrap a través de CDN sin necesidad de ningún paso de compilación
+                                            Comience incluyendo el CSS y JavaScript listos para producción de BOXY a través de CDN sin necesidad de ningún paso de compilación
                                         </p>
 
                                         <p>
                                             Coloca el trozo de código en el <span tx="danger" class="fw-bold fs-sm">&lt;head&gt;</span> y empieza a usar los nuevos complementos de Boxy en tu proyecto.
                                         </p>
-                                        <code code class="w-100">&lt;link rel="<span tx="info">stylesheet</span>" href="<span tx="info">https://boxy.pages.dev/css/boxy.min.css</span>"/&gt;</code>
-
+                                        <div class="copy-content">
+                                            <code toCopy="css" code class="w-100">&lt;link rel="<span tx="info">stylesheet</span>" href="<span tx="info">https://boxy.pages.dev/css/boxy.min.css</span>"/&gt;</code>
+                                            <button copyThis="css" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                                        </div>
 
                                         <p>
                                             Coloca el trozo de código antes de terminar el en el <span tx="danger" class="fw-bold fs-sm">&lt;/body&gt;</span> para hacer funcionar las modales y bg-img
                                         </p>
-                                        <code code class="w-100">&lt;script type="<span tx="info">text/javascript</span>" src="<span tx="info">https://boxy.pages.dev/js/boxy.min.js</span>"&gt;&lt;/script&gt;</code>
+                                        <div class="copy-content">
+                                            <code toCopy="javascript" code class="w-100">&lt;script type="<span tx="info">text/javascript</span>" src="<span tx="info">https://boxy.pages.dev/js/boxy.min.js</span>"&gt;&lt;/script&gt;</code>
+                                            <button copyThis="javascript" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                                        </div>
+
+                                        <span class="tt-xs mt-1">Ejemplo</span>
+                                        <p>
+                                           Crea un archivo HTML y copia este ejemplo para hacer una prueba del CDN de Boxy.
+                                        </p>
+                                        <div class="copy-content">
+                                            <code code toCopy="example" class="w-100">
+                                                &lt;!doctype html&gt; <br>
+                                                &lt;html lang="en"&gt;<br>
+                                                &lt;head&gt;<br>
+                                                &nbsp;    &lt;meta charset="utf-8"&gt;<br>
+                                                &nbsp;    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+                                                &nbsp;    &lt;title&gt;Bienvenido a Boxy&lt;/title&gt;<br>
+                                                &nbsp;    <span tx="info">&lt;link rel="<span tx="warning">stylesheet</span>" href="<span tx="warning">https://boxy.pages.dev/css/boxy.min.css</span>"/&gt;</span><br>
+                                                &lt;/head&gt;<br>
+                                                &lt;body&gt;<br>
+                                                &nbsp;    &lt;h1&gt;Hola Mundo!&lt;/h1&gt;<br>
+                                                &nbsp;    <span tx="info">&lt;script type="<span tx="warning">text/javascript</span>" src="<span tx="warning">https://boxy.pages.dev/js/boxy.min.js</span>"&gt;&lt;/script&gt;<br></span>
+                                                &lt;/body&gt;<br>
+                                                &lt;/html&gt;<br>
+                                        </code>
+                                            <button copyThis="example" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -62,6 +88,7 @@
             </div>
         </div>
         <script type="text/javascript" src="../js/boxy.min.js"></script>
+        <!-- <script type="text/javascript" src="../js/test.js" hola="escribe aqui"></script> -->
 
 </body>
 
