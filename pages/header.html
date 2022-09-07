@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/boxy.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>BOXY</title>
+</head>
+
+<body bg-img="../img/md.jpg" fixed>
+    <div class="b-header" gradient bg="primary">
+        <a class="b-header-logo" href="../">BOXY</a>
+        <a href="start.html" class="b-btn" color="default">Start</a>
+        <a href="https://docs.google.com/document/d/1ISIqMRtN6rF4XaEbVrnv7tebgu6knEvkulT8QvIlXw8/edit?usp=sharing" class="b-btn" color="default">Documentación</a>
+
+        <div class="b-header-fixed">
+            <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</a>
+        </div>
+    </div>
+
+    <div class="h-body">
+        <div class="row jc-center">
+            <div class="col-12 col-lg-8">
+                <div class="b-box m-1" skin="blur" bg="light">
+                    <div class="b-box-header"><span class="tt-md">Header</span></div>
+                    <div class="b-box-content">
+
+                        <p>Para uso de este componente se utiliza la clase: b-header:</p>
+
+                        <div class="b-windows">
+                            <div class="head">
+                                <span default b-set="{{ step1 = 1 }}" class="title">Vista Previa</span>
+                                <span b-set="{{ step1 = 2 }}" class="title">Código</span>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step1 == '1'}}">
+                                <header class="b-header">
+                                </header>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step1 == '2'}}">
+                                <div class="copy-content h-100">
+                                    <code code toCopy="step1">
+                                        &lt;header class="b-header"&gt;<br>
+                                        &lt;/header&gt;
+                                    </code>
+                                    <button copyThis="step1" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Puedes añadir el nombre o logotipo del sitio con b-header-logo dentro del b-header</p>
+
+                        <div class="b-windows">
+                            <div class="head">
+                                <span default b-set="{{ step2 = 1 }}" class="title">Vista Previa</span>
+                                <span b-set="{{ step2 = 2 }}" class="title">Código</span>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step2 == '1'}}">
+                                <header class="b-header">
+                                    <span class="b-header-logo">BOXY</span>
+                                </header>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step2 == '2'}}">
+                                <div class="copy-content h-100">
+                                    <code code toCopy="step2">
+                                        &lt;header class="b-header"&gt;<br>
+                                        &nbsp;    &lt;a href="/" class="<span tx="info">b-header-logo</span>"&gt;BOXY&lt;/a&gt;<br>
+                                        &lt;/header&gt;
+                                    </code>
+                                    <button copyThis="step2" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Añade botones o links de navegación con b-header-content</p>
+
+                        <div class="b-windows">
+                            <div class="head">
+                                <span default b-set="{{ step3 = 1 }}" class="title">Vista Previa</span>
+                                <span b-set="{{ step3 = 2 }}" class="title">Código</span>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step3 == '1'}}">
+                                <header class="b-header">
+                                    <span class="b-header-logo">BOXY</span>
+                                    <div class="b-header-content">
+                                        <button class="b-btn" color="default">About</button>
+                                        <button class="b-btn" color="default">Portfolio</button>
+                                        <button class="b-btn" color="success">Contact</button>
+                                    </div>
+                                </header>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step3 == '2'}}">
+                                <div class="copy-content h-100">
+                                    <code code toCopy="step3">
+                                        &lt;header class="b-header"&gt;<br>
+                                        &nbsp;  &lt;a href="/" class="b-header-logo"&gt;BOXY&lt;/a&gt;<br>
+                                        &nbsp;  &lt;div class="<span tx="info">b-header-content</span>"&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;About&lt;/button&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;Portfolio&lt;/button&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="success"&gt;Contact&lt;/button&gt;<br>
+                                        &nbsp;  &lt;/div&gt;<br>
+                                        &lt;/header&gt;
+                                    </code>
+                                    <button copyThis="step3" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Añade botones o links de navegación fijos al final con b-header-fixed</p>
+
+                        <div class="b-windows">
+                            <div class="head">
+                                <span default b-set="{{ step4 = 1 }}" class="title">Vista Previa</span>
+                                <span b-set="{{ step4 = 2 }}" class="title">Código</span>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step4 == '1'}}">
+                                <header class="b-header">
+                                    <span class="b-header-logo">BOXY</span>
+                                    <div class="b-header-content">
+                                        <button class="b-btn" color="default">About</button>
+                                        <button class="b-btn" color="default">Portfolio</button>
+                                        <button class="b-btn" color="success">Contact</button>
+                                    </div>
+                                    <div class="b-header-fixed">
+                                        <button class="b-btn" color="default">Login</button>
+                                        <button class="b-btn" color="default">Sign up</button>
+                                        <button class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</button>
+                                    </div>
+                                </header>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step4 == '2'}}">
+                                <div class="copy-content h-100">
+                                    <code code toCopy="step4">
+                                        &lt;header class="b-header"&gt;<br>
+                                        &nbsp;  &lt;a href="/" class="b-header-logo"&gt;BOXY&lt;/a&gt;<br>
+                                        &nbsp;  &lt;div class="<span tx="info">b-header-content</span>"&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;About&lt;/button&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;Portfolio&lt;/button&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="success"&gt;Contact&lt;/button&gt;<br>
+                                        &nbsp;  &lt;/div&gt;<br>
+                                        &lt;/header&gt;
+                                    </code>
+                                    <button copyThis="step4" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Añade color de fondo con la propiedad global bg</p>
+
+                        <p>Puede consultar los colores disponibles desde <a href="#">aquí</a></p>
+
+                        <div class="b-windows">
+                            <div class="head">
+                                <span default b-set="{{ step5 = 1 }}" class="title">Vista Previa</span>
+                                <span b-set="{{ step5 = 2 }}" class="title">Código</span>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step5 == '1'}}">
+                                <header class="b-header" bg="primary">
+                                    <span class="b-header-logo">BOXY</span>
+                                    <div class="b-header-content">
+                                        <button class="b-btn" color="default">About</button>
+                                        <button class="b-btn" color="default">Portfolio</button>
+                                        <button class="b-btn" color="success">Contact</button>
+                                    </div>
+                                    <div class="b-header-fixed">
+                                        <button class="b-btn" color="default">Login</button>
+                                        <button class="b-btn" color="default">Sign up</button>
+                                        <button class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</button>
+                                    </div>
+                                </header>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step5 == '2'}}">
+                                <div class="copy-content h-100">
+                                    <code code toCopy="step5">
+                                        &lt;header class="b-header" <span tx="warning">bg</span>="<span tx="info">primary</span>"&gt;<br>
+                                        &nbsp;  &lt;a href="/" class="b-header-logo"&gt;BOXY&lt;/a&gt;<br>
+                                        &nbsp;  &lt;div class="b-header-content"&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;About&lt;/button&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;Portfolio&lt;/button&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="success"&gt;Contact&lt;/button&gt;<br>
+                                        &nbsp;  &lt;/div&gt;<br>
+                                        &lt;/header&gt;
+                                    </code>
+                                    <button copyThis="step5" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Este complemento tiene una propiedad propia para tener el efecto borroso con <span tx="danger">skin="blur"</span>
+                            tomando en cuenta que el fondo debe de tener una imagen</p>
+
+                        <div class="b-windows">
+                            <div class="head">
+                                <span default b-set="{{ step6 = 1 }}" class="title">Vista Previa</span>
+                                <span b-set="{{ step6 = 2 }}" class="title">Código</span>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step6 == '1'}}" bg-img="../img/test.jpg">
+                                <header class="b-header" bg="primary" skin="blur">
+                                    <span class="b-header-logo">BOXY</span>
+                                    <div class="b-header-content">
+                                        <button class="b-btn" color="default">About</button>
+                                        <button class="b-btn" color="default">Portfolio</button>
+                                        <button class="b-btn" color="success">Contact</button>
+                                    </div>
+                                    <div class="b-header-fixed">
+                                        <button class="b-btn" color="default">Login</button>
+                                        <button class="b-btn" color="default">Sign up</button>
+                                        <button class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</button>
+                                    </div>
+                                </header>
+                            </div>
+
+                            <div class="body h-5" b-if="{{ step6 == '2'}}">
+                                <div class="copy-content h-100">
+                                    <code code toCopy="step6">
+                                        &lt;header class="b-header" bg="primary "<span tx="warning">skin</span>="<span tx="info">blur</span>"&gt;<br>
+                                        &nbsp;  &lt;a href="/" class="b-header-logo"&gt;BOXY&lt;/a&gt;<br>
+                                        &nbsp;  &lt;div class="b-header-content"&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;About&lt;/button&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;Portfolio&lt;/button&gt;<br>
+                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="success"&gt;Contact&lt;/button&gt;<br>
+                                        &nbsp;  &lt;/div&gt;<br>
+                                        &lt;/header&gt;
+                                    </code>
+                                    <button copyThis="step6" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-table mb-2 mt-2">
+                            <table>
+                                <tr bg="primary" tx="light">
+                                    <th>Clase</th>
+                                    <th>Propiedades propias</th>
+                                    <th>Detalles</th>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button class="b-btn" color="primary">b-header</button>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                <a href="#color">bg <span tx="danger">(cambia el color del fondo)</span></a>
+                                            </li>
+                                            <li>skin <span tx="danger">(cambia el aspecto del fondo)</span></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><button class="b-btn-push" color="primary">b-btn-push</button></td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                <a href="#color">color</a>
+                                            </li>
+                                            <li>bordered (Agrega bordes y quita enfoque)</li>
+                                            <li>no-efx (Quita los efectos hover)</li>
+
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span class="b-fs-sm">Con colores default y alternate</span>
+                                        <div class="b-box tc p-1">
+                                            <button class="b-btn-push" color="alternate">alternate</button>
+                                        </div>
+                                        <div class="b-box tc p-1" bg="dark">
+                                            <button class="b-btn-push" color="default">default</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><button class="b-btn-gate" color="primary">b-btn-gate</button></td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                <a href="#color">color</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="b-btn-gradient" color="primary">b-btn-gradient</button></td>
+                                    <td>
+                                        <ul>
+                                            <li>color <small tx="danger">(No tiene color en link)</small>
+
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <span id="color" class="tt-sm ">Propiedades Propias</span>
+
+                        <div class="b-table mb-2">
+                            <table>
+                                <tr bg="primary" tx="light">
+                                    <th>Propiedad</th>
+                                    <th>Detalles</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">default</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+
+                                    </td>
+                                    <td><span class="b-fs-sm">Para fondos oscuros</span>
+
+                                        <div class="b-box tc p-1" bg="dark">
+                                            <button class="b-btn" color="default">default</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">alternate</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+
+                                    </td>
+                                    <td><span class="b-fs-sm">Para fondos claros</span>
+                                        <div class="b-box tc p-1">
+                                            <button class="b-btn" color="alternate">alternate</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">primary</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                    </td>
+                                    <td class="tc">
+                                        <button class="b-btn" color="primary">primary</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">secondary</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                    </td>
+                                    <td class="tc">
+                                        <button class="b-btn" color="secondary">secondary</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">success</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                    </td>
+                                    <td class="tc">
+                                        <button class="b-btn" color="success">success</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">warning</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                    </td>
+                                    <td class="tc">
+                                        <button class="b-btn" color="warning">warning</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">danger</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                    </td>
+                                    <td class="tc">
+                                        <button class="b-btn" color="danger">danger</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">info</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                    </td>
+                                    <td class="tc">
+                                        <button class="b-btn" color="info">info</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">light</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                    </td>
+                                    <td class="tc">
+                                        <button class="b-btn" color="light">light</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">dark</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                    </td>
+                                    <td class="tc">
+                                        <button class="b-btn" color="dark">dark</button>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="b-box mb-2">
+                            <div class="b-box-header"><span class="st-md">b-btn</span></div>
+                            <div class="b-box-content me-1-all row jc-center">
+
+                                <div class="col-12 tc">
+                                    <div class="b-box p-1 fit-content ib" bg="dark">
+                                        <button class="b-btn" color="default">default</button>
+                                    </div>
+
+
+                                    <div class="b-box p-1 fit-content ib">
+                                        <button class="b-btn" color="alternate">alternate</button>
+                                    </div>
+                                </div>
+
+                                <button class="b-btn" color="primary">primary</button>
+                                <button class="b-btn" color="secondary">secondary</button>
+                                <button class="b-btn" color="success">success</button>
+                                <button class="b-btn" color="warning">warning</button>
+                                <button class="b-btn" color="danger">danger</button>
+                                <button class="b-btn" color="info">info</button>
+                                <button class="b-btn" color="light">light</button>
+                                <button class="b-btn" color="dark">dark</button>
+                                <button class="b-btn" color="link">link</button>
+                            </div>
+
+                        </div>
+                        <div class="b-box mb-2">
+                            <div class="b-box-header"><span class="st-md">b-btn-push</span></div>
+                            <div class="b-box-content me-1-all row jc-center">
+
+                                <div class="col-12 tc">
+                                    <div class="b-box p-1 fit-content ib" bg="dark">
+                                        <button class="b-btn-push" color="default">default</button>
+                                    </div>
+
+
+                                    <div class="b-box p-1 fit-content ib">
+                                        <button class="b-btn-push" color="alternate">alternate</button>
+                                    </div>
+                                </div>
+
+                                <button class="b-btn-push" color="primary">primary</button>
+                                <button class="b-btn-push" color="secondary">secondary</button>
+                                <button class="b-btn-push" color="success">success</button>
+                                <button class="b-btn-push" color="warning">warning</button>
+                                <button class="b-btn-push" color="danger">danger</button>
+                                <button class="b-btn-push" color="info">info</button>
+                                <button class="b-btn-push" color="light">light</button>
+                                <button class="b-btn-push" color="dark">dark</button>
+                                <button class="b-btn-push" color="link">link</button>
+                            </div>
+
+                        </div>
+                        <div class="b-box mb-2">
+                            <div class="b-box-header"><span class="st-md">b-btn-gate</span></div>
+                            <div class="b-box-content me-1-all row jc-center">
+                                <button class="b-btn-gate" color="primary">primary</button>
+                                <button class="b-btn-gate" color="secondary">secondary</button>
+                                <button class="b-btn-gate" color="success">success</button>
+                                <button class="b-btn-gate" color="warning">warning</button>
+                                <button class="b-btn-gate" color="danger">danger</button>
+                                <button class="b-btn-gate" color="info">info</button>
+                                <button class="b-btn-gate" color="light">light</button>
+                                <button class="b-btn-gate" color="dark">dark</button>
+                                <button class="b-btn-gate" color="link">link</button>
+                            </div>
+                        </div>
+                        <div class="b-box mb-2">
+                            <div class="b-box-header"><span class="st-md">b-btn-gradient</span></div>
+                            <div class="b-box-content me-1-all row jc-center">
+                                <button class="b-btn-gradient" color="primary">primary</button>
+                                <button class="b-btn-gradient" color="secondary">secondary</button>
+                                <button class="b-btn-gradient" color="success">success</button>
+                                <button class="b-btn-gradient" color="warning">warning</button>
+                                <button class="b-btn-gradient" color="danger">danger</button>
+                                <button class="b-btn-gradient" color="info">info</button>
+                                <button class="b-btn-gradient" color="light">light</button>
+                                <button class="b-btn-gradient" color="dark">dark</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/boxy.min.js"></script>
+</body>
+
+</html>
