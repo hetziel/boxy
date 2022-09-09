@@ -26,16 +26,19 @@
       <a href="/" class="b-header-logo">BOXY</a>
       <div class="b-header-content">
         <a href="pages/start.html" class="b-btn" color="default"
-          >Empieza ahora</a>
+          >Empieza ahora</a
+        >
         <a href="pages/cards.html" class="b-btn" color="default">Cards</a>
         <a href="pages/inputs.html" class="b-btn" color="success">Inputs</a>
       </div>
       <div class="b-header-fixed">
         <a href="pages/plantilla-hetz.html" class="b-btn" color="default"
-          >Plantilla</a>
+          >Plantilla</a
+        >
         <a href="pages/test.html" class="b-btn" color="default">Test</a>
         <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"
-          ><i class="fa-brands fa-github"></i> Github</a>
+          ><i class="fa-brands fa-github"></i> Github</a
+        >
       </div>
       <div class="mobile" open="b-side-nav">
         <i class="fa-solid fa-bars"></i>
@@ -57,7 +60,8 @@
         <button class="b-nav-header">Empezando</button>
         <div class="b-nav-content">
           <a href="pages/start.html" class="b-btn w-100 m-1" color="primary"
-            >Instalación</a>
+            >Instalación</a
+          >
         </div>
 
         <button class="b-nav-header">Nuevas características</button>
@@ -67,7 +71,8 @@
             class="b-btn w-100 m-1"
             color="secondary"
             rd="none"
-            >Header</a>
+            >Header</a
+          >
           <button class="b-btn w-100 m-1" color="primary">Botones</button>
           <button class="b-btn-push w-100 m-1" color="primary">
             Tipografía
@@ -81,18 +86,33 @@
             class="b-btn w-100 m-1"
             color="secondary"
             rd="none"
-            >Tipografía</a>
+            >Tipografía</a
+          >
         </div>
 
         <button class="b-nav-header">Componentes</button>
-        <div class="b-nav-content">
+        <div class="b-nav-content pt-1">
           <a
-            href="pages/buttons.html"
-            class="b-btn w-100 m-1"
+            href="pages/header.html"
+            class="b-btn w-100"
             color="secondary"
             rd="none"
-            >Botones</a>
-          <a href="pages/modal.html" class="b-btn w-100 m-1" color="secondary" rd="none">Modal</a>
+            >Header</a
+          >
+          <a
+            href="pages/buttons.html"
+            class="b-btn w-100"
+            color="secondary"
+            rd="none"
+            >Botones</a
+          >
+          <a
+            href="pages/modal.html"
+            class="b-btn w-100"
+            color="secondary"
+            rd="none"
+            >Modal</a
+          >
         </div>
       </div>
       <!-- Sidebar -->
@@ -127,12 +147,7 @@
               </div>
               <div class="b-box-content">
                 <div class="row jc-center mt-1">
-                  <a
-                    href="pages/start.html"
-                    class="b-btn-gradient me-1"
-                    color="primary"
-                    >Empieza ahora</a
-                  >
+                  <a href="pages/header.html" class="b-btn-gradient me-1" color="primary" >Header</a>
                   <a
                     href="pages/typography.html"
                     class="b-btn-push me-1"
@@ -160,22 +175,21 @@
     <div modal="1" class="b-modal-wrapper" skin="blur" position="2" in-out>
       <div class="b-modal-content" skin="transparent">
         <div class="b-modal-head">
-          <span class="b-modal-title">Este es el componente de modal</span>
+          <span class="b-modal-title">Modales</span>
           <button close-modal class="b-btn-icon" close-modal>&times;</button>
         </div>
         <div class="b-modal-body">
           <div class="b-card-container w-100" bg="light">
             <div class="b-card-header" st="radius">
-              <span class="tt-sm">Tarjetas personalizadas</span>
+              <span class="tt-sm">De click a abrir para abrir las modales</span>
             </div>
-            <div class="b-card-content" st="radius"></div>
             <div class="b-card-footer" st="radius">
-              <button class="b-btn w-100" color="primary">Submit</button>
+              <a href="./pages/modal.html" class="b-btn w-100" color="primary">Abrir</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="js/boxy.min.js"></script>
+    <script src="./js/boxy.min.js"></script>
   </body>
 </html>
