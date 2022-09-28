@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../css/boxy-buttons.min.css" /> -->
+    <link rel="stylesheet" href="../css/boxy.min.css" />
+    <link rel="stylesheet" href="../vendor/fontawesome-free-6.1.1-web/css/all.min.css" />
+    <script src="../vendor/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+    <title>BOXY</title>
+</head>
+
+<body>
+    <!-- <header class="b-header-2" id="header">
+        <div class="logo">
+            <img src="https://bdvenlinea.banvenez.com/logo_bdvenlinea_logoff.png">
+        </div>
+
+
+        <div class="menu" id="myTopnav">
+            <ul>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" open="b-side-nav">&#9776;</a>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Request Quote</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header> -->
+
+    <div class="b-header">
+        <span class="b-header-logo">BOXY</span>
+        <div class="b-header-content">
+            <button class="b-btn" color="default">Darmin</button>
+            <button class="b-btn" color="default">Pablo</button>
+            <button class="b-btn" color="default">Gabriel</button>
+            <div class="b-header-fixed">
+                <button class="b-btn" color="primary">Hetziel</button>
+            </div>
+        </div>
+
+        <div class="mobile" open="b-side-nav">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div b-side-nav>
+        <a class="closebtn" close>&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Request Quote</a>
+        <a href="#">Contact</a>
+        <p style="color: #1c3664; text-align: center">Hubover &copy; 2017</p>
+    </div>
+    <!-- <div b-side-nav>
+        <a href="javascript:void(0)" class="closebtn" close>&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Request Quote</a>
+        <a href="#">Contact</a>
+        <p style="color: #1c3664; text-align: center">Hubover &copy; 2017</p>
+    </div> -->
+
+    <button class="b-btn-gate" bordered color="success">success</button>
+    <button class="b-btn-gate" bordered color="warning">warning</button>
+    <button class="b-btn-gate" bordered color="orange">orange</button>
+    <button class="b-btn-gate" bordered color="danger">danger</button>
+    <button class="b-btn-gate" bordered color="info">info</button>
+    <button class="b-btn-gate" bordered color="aqua">aqua</button>
+    <button class="b-btn-gate" bordered color="turq">turq</button>
+    <button class="b-btn-gate" bordered color="primary">primary</button>
+    <button class="b-btn-gate" bordered color="indigo">indigo</button>
+    <button class="b-btn-gate" bordered color="purple">purple</button>
+    <button class="b-btn-gate" bordered color="dark-pink">dark-pink</button>
+    <button class="b-btn-gate" bordered color="pink">pink</button>
+    <button class="b-btn-gate" bordered color="dark">dark</button>
+    <button class="b-btn-gate" bordered color="secondary">gray</button>
+    <button class="b-btn-gate" bordered color="light">light</button>
+    <button class="b-btn-gate">sin color</button>
+    <span color="primary">Holaaa Xcolor</span>
+    <span color="primary">Hello Xcolor</span>
+    <input type="file" onchange="loadFile(this.files[0])">
+    <br>
+    <pre id="output"></pre>
+
+
+    <script src="/js/boxy.min.js">
+    </script>
+    <script src="/js/test.js">
+    </script>
+    <script>
+         theme("primary","blue");
+         theme("secondary","gray");
+         theme("success","green");
+         theme("warning","yellow");
+         theme("danger","red");
+         theme("info","light-blue");
+         theme("light","white");
+         theme("dark","dark-gray");
+    </script>
+
+</body>
+
+</html>

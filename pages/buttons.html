@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/boxy.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>BOXY</title>
 </head>
 
 <body bg-img="../img/md.jpg" fixed>
-    <div class="b-header" gradient bg="primary">
-        <a class="b-logo-title" href="../">BOXY</a>
-        <a href="start.html" class="b-btn" color="default">Start</a>
-        <a href="https://docs.google.com/document/d/1ISIqMRtN6rF4XaEbVrnv7tebgu6knEvkulT8QvIlXw8/edit?usp=sharing" class="b-btn" color="default">Documentación</a>
-
-        <div class="b-header-end">
-            <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</a>
+    <!-- header -->
+    <header class="b-header" bg="blue">
+        <a href="/" class="b-header-logo">BOXY</a>
+        <div class="b-header-content">
+          <a href="#" onclick="history.back()" class="b-btn" color="default">Ir atrás</a>
         </div>
-    </div>
+        <div class="b-header-fixed">
+          <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</a>
+        </div>
+      </header>
 
-    <div class="h-body">
+    <div class="b-body">
         <div class="row jc-center">
             <div class="col-12 col-lg-8">
                 <div class="b-box m-1" skin="blur" bg="light">
@@ -122,7 +120,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">default</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>" color="<span tx="info">default</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
 
                                     </td>
                                     <td><span class="b-fs-sm">Para fondos oscuros</span>
@@ -134,7 +132,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">alternate</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>" color="<span tx="info">alternate</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
 
                                     </td>
                                     <td><span class="b-fs-sm">Para fondos claros</span>
@@ -145,7 +143,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">primary</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>" color="<span tx="info">primary</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
                                     </td>
                                     <td class="tc">
                                         <button class="b-btn" color="primary">primary</button>
@@ -153,7 +151,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">secondary</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>" color="<span tx="info">secondary</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
                                     </td>
                                     <td class="tc">
                                         <button class="b-btn" color="secondary">secondary</button>
@@ -161,7 +159,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">success</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>" color="<span tx="info">success</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
                                     </td>
                                     <td class="tc">
                                         <button class="b-btn" color="success">success</button>
@@ -169,7 +167,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">warning</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>" color="<span tx="info">warning</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
                                     </td>
                                     <td class="tc">
                                         <button class="b-btn" color="warning">warning</button>
@@ -177,7 +175,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">danger</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>" color="<span tx="info">danger</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
                                     </td>
                                     <td class="tc">
                                         <button class="b-btn" color="danger">danger</button>
@@ -185,7 +183,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">info</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>" color="<span tx="info">info</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
                                     </td>
                                     <td class="tc">
                                         <button class="b-btn" color="info">info</button>
@@ -193,7 +191,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">light</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>" color="<span tx="info">light</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
                                     </td>
                                     <td class="tc">
                                         <button class="b-btn" color="light">light</button>
@@ -201,7 +199,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code code>&lt;button class="<span tx="warning">h-btn</span>"&gt; color="<span tx="info">dark</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                                        <code code>&lt;button class="<span tx="warning">h-btn</span>" color="<span tx="info">dark</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
                                     </td>
                                     <td class="tc">
                                         <button class="b-btn" color="dark">dark</button>
@@ -299,6 +297,16 @@
         </div>
     </div>
     <script type="text/javascript" src="../js/boxy.min.js"></script>
+    <script>
+        theme("primary","blue");
+        theme("secondary","gray");
+        theme("success","green");
+        theme("warning","yellow");
+        theme("danger","red");
+        theme("info","blue-2");
+        theme("light","white");
+        theme("dark","dark-gray");
+   </script>
 </body>
 
 </html>

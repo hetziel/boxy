@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/boxy.min.css" />
+        <link rel="stylesheet" href="../vendor/fontawesome-free-6.1.1-web/css/all.min.css"/>
+        <script src="../vendor/fontawesome-free-6.1.1-web/js/all.min.js"></script><title>BOXY - Colores</title>
+        <style>
+            .colors-dev div{
+                width: 100px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .colors-dev{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- header -->
+        <header class="b-header" bg="red">
+            <a href="/" class="b-header-logo">BOXY</a>
+            <div class="b-header-content">
+              <a href="#" onclick="history.back()" class="b-btn" color="default">Ir atrás</a>
+            </div>
+            <div class="b-header-fixed">
+              <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</a>
+            </div>
+          </header>
+
+          <!-- b-body -->
+          <div class="row jc-center">
+
+
+
+                <div class="col-lg-4 col-8">
+                    <div class="b-box m-1">
+                        <div class="b-box-header">
+                            <span class="tt-md" tx="dark">Colores</span>
+                        </div>
+                        <div class="b-box-content">
+                            <p>Boxy tiene un sistema de colores integrado, de manera que todos los componentes tengan la facilidad de colorearse.</p>
+
+                            <span class="st-md">Atributos globales</span>
+                            <p>Para dar color a elementos se utiliza el atributo <b>bg=""</b>, para textos se utiliza <b>tx=""</b></p>
+
+                            <span class="st-md">Atributos propios</span>
+                            <p>Para dar color a componentes que tienen disponible el atributo <b>color</b>, se utiliza el atributo <b>color=""</b>.</p>
+                            <ul>
+                                <li>BG (Fondo)</li>
+                                <li>TX (Texto)</li>
+                                <li>COLOR (Componente)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-8">
+                    <div class="b-box m-1" skin="blur" bg="light">
+                        <div class="b-box-header">
+                          <span class="tt-md" tx="dark">Colores disponiles</span>
+                        </div>
+                        <div class="b-box-content" tx="secondary">
+                          Boxy por los momentos tiene 15 colores que se pueden utilizar con los atributos mencionados anteriormente.
+
+                          <div class="b-box colors-dev mt-1">
+                            <div bg="green">green</div>
+                            <div bg="yellow">yellow</div>
+                            <div bg="orange">orange</div>
+                            <div bg="red">red</div>
+                            <div bg="light-blue">light-blue</div>
+                            <div bg="aqua">aqua</div>
+                            <div bg="turq">turq</div>
+                            <div bg="blue" tx="white">blue</div>
+                            <div bg="indigo" tx="white">indigo</div>
+                            <div bg="purple" tx="white">purple</div>
+                            <div bg="dark-pink" tx="white">dark-pink</div>
+                            <div bg="pink" tx="white">pink</div>
+                            <div bg="dark-gray" tx="white">dark-gray</div>
+                            <div bg="gray" tx="white">gray</div>
+                            <div bg="white">white</div>
+                          </div>
+                        </div>
+
+                        <div class="b-box colors-dev mt-1" style="background: rgb(0,0,0,0.05)">
+                            <span tx="green">green</span>
+                            <span tx="yellow">yellow</span>
+                            <span tx="orange">orange</span>
+                            <span tx="red">red</span>
+                            <span tx="light-blue">light-blue</span>
+                            <span tx="aqua">aqua</span>
+                            <span tx="turq">turq</span>
+                            <span tx="blue" tx="white">blue</span>
+                            <span tx="indigo" tx="white">indigo</span>
+                            <span tx="purple" tx="white">purple</span>
+                            <span tx="dark-pink" tx="white">dark-pink</span>
+                            <span tx="pink" tx="white">pink</span>
+                            <span tx="dark-gray" tx="white">dark-gray</span>
+                            <span tx="gray" tx="white">gray</span>
+                            <span tx="white">white</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <script src="../js/boxy.min.js"></script>
+    </body>
+</html>

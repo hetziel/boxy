@@ -12,17 +12,18 @@
 </head>
 
 <body bg-img="../img/md.jpg" fixed>
-    <div class="b-header" gradient bg="primary">
-        <a class="b-header-logo" href="../">BOXY</a>
-        <a href="start.html" class="b-btn" color="default">Start</a>
-        <a href="https://docs.google.com/document/d/1ISIqMRtN6rF4XaEbVrnv7tebgu6knEvkulT8QvIlXw8/edit?usp=sharing" class="b-btn" color="default">Documentación</a>
-
-        <div class="b-header-fixed">
-            <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</a>
+    <!-- header -->
+    <header class="b-header" bg="blue">
+        <a href="/" class="b-header-logo">BOXY</a>
+        <div class="b-header-content">
+          <a href="#" onclick="history.back()" class="b-btn" color="default">Ir atrás</a>
         </div>
-    </div>
+        <div class="b-header-fixed">
+          <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</a>
+        </div>
+      </header>
 
-    <div class="h-body">
+    <div class="b-body">
         <div class="row jc-center">
             <div class="col-12 col-lg-8">
                 <div class="b-box m-1" skin="blur" bg="light">
@@ -133,7 +134,7 @@
 
                                        <span tx="secondary">&lt;!-- Modal --&gt;</span> <br>
 
-                                        &lt;div <span tx="info">modal</span>="<span tx="warning">ejemplo2</span>" class="b-modal-wrapper"&gt;<br>
+                                        &lt;div modal="ejemplo2" <span tx="light-blue">position</span>="<span tx="warning">1</span>" class="b-modal-wrapper"&gt;<br>
                                         &nbsp;    &lt;div class="b-modal-content"&gt; <br>
                                         &nbsp;&nbsp;        &lt;div class="b-modal-body"&gt; <br>
                                         &nbsp;&nbsp;&nbsp;            &lt;p&gt;<br>
@@ -202,115 +203,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <p>Añade color de fondo con la propiedad global bg</p>
-
-                        <p>Puede consultar los colores disponibles desde <a href="#">aquí</a></p>
-
-                        <div class="b-windows">
-                            <div class="head">
-                                <span default b-set="{{ step5 = 1 }}" class="title">Vista Previa</span>
-                                <span b-set="{{ step5 = 2 }}" class="title">Código</span>
-                            </div>
-
-                            <div class="body h-5" b-if="{{ step5 == '1'}}">
-                                <header class="b-header" bg="primary">
-                                    <span class="b-header-logo">BOXY</span>
-                                    <div class="b-header-content">
-                                        <button class="b-btn" color="default">About</button>
-                                        <button class="b-btn" color="default">Portfolio</button>
-                                        <button class="b-btn" color="success">Contact</button>
-                                    </div>
-                                    <div class="b-header-fixed">
-                                        <button class="b-btn" color="default">Login</button>
-                                        <button class="b-btn" color="default">Sign up</button>
-                                        <button class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</button>
-                                    </div>
-                                </header>
-                            </div>
-
-                            <div class="body h-5" b-if="{{ step5 == '2'}}">
-                                <div class="copy-content h-100">
-                                    <code code toCopy="step5">
-                                        &lt;header class="b-header" <span tx="warning">bg</span>="<span tx="info">primary</span>"&gt;<br>
-                                        &nbsp;  &lt;a href="/" class="b-header-logo"&gt;BOXY&lt;/a&gt;<br>
-                                        &nbsp;  &lt;div class="b-header-content"&gt;<br>
-                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;About&lt;/button&gt;<br>
-                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;Portfolio&lt;/button&gt;<br>
-                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="success"&gt;Contact&lt;/button&gt;<br>
-                                        &nbsp;  &lt;/div&gt;<br>
-                                        &lt;/header&gt;
-                                    </code>
-                                    <button copyThis="step5" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p>Este complemento tiene una propiedad propia para tener el efecto borroso con <span tx="danger">skin="blur"</span>
-                            tomando en cuenta que el fondo debe de tener una imagen</p>
-
-                        <div class="b-windows">
-                            <div class="head">
-                                <span default b-set="{{ step6 = 1 }}" class="title">Vista Previa</span>
-                                <span b-set="{{ step6 = 2 }}" class="title">Código</span>
-                            </div>
-
-                            <div class="body h-5" b-if="{{ step6 == '1'}}" bg-img="../img/test.jpg">
-                                <header class="b-header" bg="primary" skin="blur">
-                                    <span class="b-header-logo">BOXY</span>
-                                    <div class="b-header-content">
-                                        <button class="b-btn" color="default">About</button>
-                                        <button class="b-btn" color="default">Portfolio</button>
-                                        <button class="b-btn" color="success">Contact</button>
-                                    </div>
-                                    <div class="b-header-fixed">
-                                        <button class="b-btn" color="default">Login</button>
-                                        <button class="b-btn" color="default">Sign up</button>
-                                        <button class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</button>
-                                    </div>
-                                </header>
-                            </div>
-
-                            <div class="body h-5" b-if="{{ step6 == '2'}}">
-                                <div class="copy-content h-100">
-                                    <code code toCopy="step6">
-                                        &lt;header class="b-header" bg="primary "<span tx="warning">skin</span>="<span tx="info">blur</span>"&gt;<br>
-                                        &nbsp;  &lt;a href="/" class="b-header-logo"&gt;BOXY&lt;/a&gt;<br>
-                                        &nbsp;  &lt;div class="b-header-content"&gt;<br>
-                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;About&lt;/button&gt;<br>
-                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="default"&gt;Portfolio&lt;/button&gt;<br>
-                                        &nbsp;&nbsp;    &lt;button class="b-btn" color="success"&gt;Contact&lt;/button&gt;<br>
-                                        &nbsp;  &lt;/div&gt;<br>
-                                        &lt;/header&gt;
-                                    </code>
-                                    <button copyThis="step6" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div modal="tarjetas" class="b-modal-wrapper" skin="blur" position="2" in-out>
-        <div class="b-modal-content" skin="transparent">
-            <div class="b-modal-head">
-                <span class="b-modal-title">Este es el titulo de la modal que no se tiene que salir demas de donde la pusieron</span>
-                <button close-modal class="b-btn-icon" close-modal>&times;</button>
-            </div>
-            <div class="b-modal-body">
-                <div class="b-card-container w-100" bg="light">
-                    <div class="b-card-header" st="radius">
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div class="b-card-body" st="radius">
-                    </div>
-                    <div class="b-card-footer" st="radius">
-                        <button class="b-btn-push w-100" color="primary">Submit</button>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -494,7 +389,16 @@
         </div>
     </div>
     <script type="text/javascript" src="../js/boxy.min.js"></script>
-    <script type="text/javascript" src="../js/test.js"></script>
+    <script>
+        theme("primary","blue");
+        theme("secondary","gray");
+        theme("success","green");
+        theme("warning","yellow");
+        theme("danger","red");
+        theme("info","blue-2");
+        theme("light","white");
+        theme("dark","dark-gray");
+   </script>
 </body>
 
 </html>
