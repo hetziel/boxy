@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="./vendor/fontawesome-free-6.1.1-web/css/all.min.css"
     />
     <script src="./vendor/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+    <style>
+      .box *{
+        margin: 5px;
+      }
+    </style>
   </head>
 
   <body>
@@ -124,10 +129,10 @@
         </div>
 
         <div class="row">
-          <div class="col-12 tc">
-            <h1>Bienvenidos a Boxy</h1>
+          <div class="col-12">
+            <h1 class="tc">Bienvenidos a Boxy</h1>
 
-            <div class="b-box m-1" skin="blur" bg="light">
+            <div class="b-box m-1 tc" skin="blur" bg="light">
               <div class="b-box-header">
                 <span class="tt-md" tx="dark">¿Qué es Boxy?</span>
               </div>
@@ -147,28 +152,29 @@
               <div class="b-box-header">
                 <span class="tt-md" tx="dark">Nuevas características</span>
               </div>
-              <div class="b-box-content">
+              <div class="b-box-content box">
                 <div class="row jc-center mt-1">
-                  <a href="pages/bg-img.html" class="b-btn-gradient me-1" color="red">BG-IMG</a>
-                  <a href="pages/colors.html" class="b-btn-gradient me-1" color="primary">Colores</a>
-                  <a href="pages/header.html" class="b-btn-gradient me-1" color="primary" >Header</a>
-                  <a
-                    href="pages/typography.html"
-                    class="b-btn-push me-1"
-                    color="success"
-                    >Tipografía</a
-                  >
-                  <a
-                    href="pages/buttons.html"
-                    class="b-btn-push me-1"
-                    color="danger"
-                    >Botones</a
-                  >
-
-                  <button class="b-btn-push" color="primary" open-modal="1">
-                    Modal
-                  </button>
+                  <a href="pages/bg-img.html" class="b-btn-gradient" color="red">BG-IMG</a>
+                  <a href="pages/colors.html" class="b-btn-gradient" color="primary">Colores</a>
+                  <a href="pages/header.html" class="b-btn-gradient" color="primary" >Header</a>
+                  <a href="pages/typography.html" class="b-btn-push" color="success">Tipografía</a>
+                  <a href="pages/buttons.html" class="b-btn-push" color="danger">Botones</a>
+                  <button class="b-btn-push" color="primary" open-modal="1">Modal</button>
                 </div>
+              </div>
+            </div>
+
+            <div class="b-box m-1" bg="light">
+              <div class="b-box-header">
+                <span class="tt-md" tx="dark">Lista de cambios</span>
+              </div>
+              <div class="b-box-content">
+                <span>Boxy 0.1.6.2917</span>
+                <ul>
+                  <li>Nuevo botón b-btn-neon <a href="pages/buttons.html">Ver aquí</a></li>
+                  <li>Nuevos colores <a href="pages/colors.html">Ver aquí</a></li>
+                  <li>Función para cambiar imagen de fondo <a href="pages/bg-img.html">Ver aquí</a></li>
+                </ul>
               </div>
             </div>
           </div>
