@@ -24,7 +24,7 @@
     <div class="b-body">
         <div class="row jc-center">
             <div class="col-12 col-lg-8">
-                <div class="b-box m-1" skin="blur" bg="light">
+                <div class="b-box m1" skin="blur" bg="light">
                     <div class="b-box-header"><span class="tt-md">Botones</span></div>
                     <div class="b-box-content">
 
@@ -36,13 +36,10 @@
                                     <th>Clase</th>
                                     <th>Propiedades propias</th>
                                     <th>Valores extras</th>
-                                </tr>
-
+                                </tr>                      
                                 <tr>
                                     <td>
-
                                         <button class="b-btn" color="primary">b-btn</button>
-
                                     </td>
                                     <td>
                                         <ul>
@@ -54,12 +51,58 @@
                                             <li>no-focus (Quita el enfoque)</li>
                                         </ul>
                                     </td>
-                                    <td><span class="b-fs-sm">Con colores default y alternate</span>
-                                        <div class="b-box tc p-1">
-                                            <button class="b-btn" color="alternate">alternate</button>
+                                    <td>
+                                        <div>
+                                            <ul>
+                                                <li>color: default , alternate y link</li>
+                                            </ul>
+                                        </td>
                                         </div>
-                                        <div class="b-box tc p-1" bg="dark">
-                                            <button class="b-btn" color="default">default</button>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="3">
+                                        <span id="color" class="tt-sm ">Propiedad color</span>
+
+                                        <div class="mb1">
+                                            <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">default</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+
+                                        </div>
+
+                                        <div class="tc p-1">
+                                            <div class="col-12 tc">
+                                                <div class="b-box p-1 fit-content ib" bg="dark">
+                                                    <span class="b-fs-sm" tx="white">Para fondos oscuros</span>
+                                                    <br>
+                                                    <button class="b-btn" color="default">default</button>
+                                                </div>
+            
+            
+                                                <div class="b-box p-1 fit-content ib">
+                                                    <span class="b-fs-sm">Para fondos claros</span>
+                                                    <br>
+                                                    <button class="b-btn" color="alternate">alternate</button>
+                                                </div>
+                                            </div>
+
+                                            <button class="b-btn m1" color="link">link</button>
+                                            <button class="b-btn m1" color="green">green</button>
+                                            <button class="b-btn m1" color="chartreuse">chartreuse</button>
+                                            <button class="b-btn m1" color="yellow">yellow</button>
+                                            <button class="b-btn m1" color="orange">orange</button>
+                                            <button class="b-btn m1" color="red">red</button>
+                                            <button class="b-btn m1" color="light-blue">light-blue</button>
+                                            <button class="b-btn m1" color="aqua">aqua</button>
+                                            <button class="b-btn m1" color="turq">turq</button>
+                                            <button class="b-btn m1" color="blue">blue</button>
+                                            <button class="b-btn m1" color="indigo">indigo</button>
+                                            <button class="b-btn m1" color="purple">purple</button>
+                                            <button class="b-btn m1" color="dark-pink">dark-pink</button>
+                                            <button class="b-btn m1" color="pink">pink</button>
+                                            <button class="b-btn m1" color="white">white</button>
+                                            <button class="b-btn m1" color="gray">gray</button>
+                                            <button class="b-btn m1" color="dark-gray">dark-gray</button>
+                                            <button class="b-btn m1" color="black">black</button>
                                         </div>
                                     </td>
                                 </tr>
@@ -127,104 +170,7 @@
                             </table>
                         </div>
                         <span id="color" class="tt-sm ">Propiedades Propias</span>
-
-                        <div class="b-table mb-2">
-                            <table>
-                                <tr bg="primary" tx="light">
-                                    <th>Propiedad</th>
-                                    <th>Detalles</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">default</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-
-                                    </td>
-                                    <td><span class="b-fs-sm">Para fondos oscuros</span>
-
-                                        <div class="b-box tc p-1" bg="dark">
-                                            <button class="b-btn" color="default">default</button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">alternate</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-
-                                    </td>
-                                    <td><span class="b-fs-sm">Para fondos claros</span>
-                                        <div class="b-box tc p-1">
-                                            <button class="b-btn" color="alternate">alternate</button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">primary</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-                                    </td>
-                                    <td class="tc">
-                                        <button class="b-btn" color="primary">primary</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">secondary</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-                                    </td>
-                                    <td class="tc">
-                                        <button class="b-btn" color="secondary">secondary</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">success</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-                                    </td>
-                                    <td class="tc">
-                                        <button class="b-btn" color="success">success</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">warning</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-                                    </td>
-                                    <td class="tc">
-                                        <button class="b-btn" color="warning">warning</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">danger</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-                                    </td>
-                                    <td class="tc">
-                                        <button class="b-btn" color="danger">danger</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">info</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-                                    </td>
-                                    <td class="tc">
-                                        <button class="b-btn" color="info">info</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">light</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-                                    </td>
-                                    <td class="tc">
-                                        <button class="b-btn" color="light">light</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">dark</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-                                    </td>
-                                    <td class="tc">
-                                        <button class="b-btn" color="dark">dark</button>
-                                    </td>
-                                </tr>
-
-                            </table>
-                        </div>
-
+               
                         <div class="b-box mb-2">
                             <div class="b-box-header"><span class="st-md">b-btn</span></div>
                             <div class="b-box-content me-1-all row jc-center">
