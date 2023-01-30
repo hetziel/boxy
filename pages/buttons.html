@@ -22,131 +22,187 @@
       </header>
 
     <div class="b-body">
-        <div class="row jc-center">
-            <div class="col-12 col-lg-8">
-                <div class="b-box m1" skin="blur" bg="light">
+        <div class="cont jc-center">
+            <div class="div-12 div-lg-4 p1">
+                <section class="b-box h100" skin="blur" bg="light">
                     <div class="b-box-header"><span class="tt-md">Botones</span></div>
                     <div class="b-box-content">
+                        <p>Boxy actualmente contiene 5 tipos de botones con multiples propiedad para personalizarlos a tu gusto:</p>
+             
+                        
+                        <div class="tc">
+                            <button class="b-btn m1" color="blue">b-btn</button>
+                            <button class="b-btn-push m1" color="blue">b-btn-push</button>
+                            <button class="b-btn-gate m1" color="blue">b-btn-gate</button>
+                            <button class="b-btn-gradient m1" color="blue">b-btn-gradient</button>
+                            <button class="b-btn-neon m1" color="blue">b-btn-neon</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-                        <p>Para incorporar el diseño al elemento del botón solo colocar las clases disponibles para este:</p>
+            <div class="div-12 div-lg-8">
+                <div class="b-box m1" skin="blur" bg="light">
+                    <div class="b-box-header"><span class="tt-md">¿Como usar?</span></div>
+                    <div class="b-box-content">
+                        <div class="b-table mb-2">
+                            <table>
+                                <tr bg="primary" tx="light">
+                                    <th>Clases</th>
+                                    <th>Atributos</th>                        
+                                </tr>                      
+                                <tr>
+                                    <td>
+                                        <p>Simplemente añadiento una de las siguientes clases puedes darle el diseño a tu botón</p>
+
+                                        <ul>
+                                            <li>b-btn (Por defecto)</li>
+                                            <li>b-btn-push (Presión)</li>
+                                            <li>b-btn-gate (Compuerta)</li>
+                                            <li>b-btn-gradient (Gradiente)</li>
+                                            <li>b-btn-neon (Neón)</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <p>Al establecer algunas de las clases se puede utilizar los siguientes atributos</p>
+
+                                        <ul>
+                                            <li>color (Disponible en todos)</li>
+                                            <li>bordered (Solo en b-btn, b-btn-push)</li>
+                                            <li>no-efx (Solo en b-btn, b-btn-push, b-btn-gate)</li>
+                                            <li>no-focus (Solo en b-btn)</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="mt1">
+                            <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">blue</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                        </div>
+
+                        <p class="mb0">Para saber los colores disponibles abre <a href="./colors.html">aquí</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="div-12">
+                <div class="b-box m1" skin="blur" bg="light">
+                    <div class="b-box-header"><span class="tt-md">Botón por defecto</span></div>
+                    <div class="b-box-content">
+                        <h1>Clase</h1>
+
+                        <p>Para aplicar el diseño al  botón solo colocar la clase <span tx="red">b-btn</span> y el atributo <span tx="purple">color</span> con el color que desees:</p>
+
+                        <div class="mt1 div-6">
+                            <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">blue</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                        </div>
+
+                        <h1>Atributos</h1>
+
+                        <div class="b-box mt1 mb1">
+                            <div class="b-box-header"><span class="tt-md">Color</span></div>
+                            <div class="b-box-content">
+                                <p>Aquí se muestran los botones con los colores disponbles incluyendo algunos colores extras:</p>
+                                <div class="tc p-1">
+                                    <div class="div-12 tc">
+                                        <button class="b-btn m1" color="green">green</button>
+                                        <button class="b-btn m1" color="chartreuse">chartreuse</button>
+                                        <button class="b-btn m1" color="yellow">yellow</button>
+                                        <button class="b-btn m1" color="orange">orange</button>
+                                        <button class="b-btn m1" color="red">red</button>
+                                        <button class="b-btn m1" color="light-blue">light-blue</button>
+                                        <button class="b-btn m1" color="aqua">aqua</button>
+                                        <button class="b-btn m1" color="turq">turq</button>
+                                        <button class="b-btn m1" color="blue">blue</button>
+                                        <button class="b-btn m1" color="indigo">indigo</button>
+                                        <button class="b-btn m1" color="purple">purple</button>
+                                        <button class="b-btn m1" color="dark-pink">dark-pink</button>
+                                        <button class="b-btn m1" color="pink">pink</button>
+                                        <button class="b-btn m1" color="white">white</button>
+                                        <button class="b-btn m1" color="gray">gray</button>
+                                        <button class="b-btn m1" color="dark-gray">dark-gray</button>
+                                        <button class="b-btn m1" color="black">black</button>
+
+                                        <span class="w100 tt-md mt1 mb1">Extras:</span>
+
+                                        <div class="b-box p-1 fit-content ib" bg="white">
+                                            <span class="b-fs-sm">Para enlaces</span>
+                                            <br>
+                                            <button class="b-btn m1" color="link">link</button>
+                                        </div>
+
+                                        <div class="b-box p-1 fit-content ib" bg="dark">
+                                            <span class="b-fs-sm" tx="white">Para fondos oscuros</span>
+                                            <br>
+                                            <button class="b-btn" color="default">default</button>
+                                        </div>
+
+                                        <div class="b-box p-1 fit-content ib">
+                                            <span class="b-fs-sm">Para fondos claros</span>
+                                            <br>
+                                            <button class="b-btn" color="alternate">alternate</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span id="border" class="tt-sm mt2">Propiedad bordered</span>
+                            <span class="mb1">Esta propiedad quita el efecto de enfoque.</span>
+
+                            <div class="mb1">
+                                <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">blue</span>" <span tx="info">bordered</span>&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+
+                            </div>
+
+                            <div class="tc p-1">
+                                <button class="b-btn m1" bordered color="blue">Botón</button>
+                                <button class="b-btn m1" bordered color="yellow">yellow</button>
+                                <button class="b-btn m1" bordered color="orange">orange</button>
+                                <button class="b-btn m1" bordered color="green">green</button>
+                                <button class="b-btn m1" bordered color="red">red</button>
+                            </div>
+
+                            <span id="efx" class="tt-sm mt2">Propiedad no-efx</span>
+                            <span class="mb1">Esta propiedad quita el efecto de sombreado al pasar sobre el boton.</span>
+
+                            <div class="mb1">
+                                <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">blue</span>" <span tx="info">no-efx</span>&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+
+                            </div>
+
+                            <div class="tc p-1">
+                                <button class="b-btn m1" no-efx color="blue">Botón</button>
+                                <button class="b-btn m1" no-efx color="yellow">yellow</button>
+                                <button class="b-btn m1" no-efx color="orange">orange</button>
+                                <button class="b-btn m1" no-efx color="green">green</button>
+                                <button class="b-btn m1" no-efx color="red">red</button>
+                            </div>
+                            <span id="focus" class="tt-sm mt2">Propiedad no-focus</span>
+                            <span class="mb1">Esta propiedad quita el efecto de enfocado.</span>
+
+                            <div class="mb1">
+                                <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">blue</span>" <span tx="info">no-focus</span>&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+
+                            </div>
+
+                            <div class="tc p-1">
+                                <button class="b-btn m1" no-focus color="blue">Botón</button>
+                                <button class="b-btn m1" no-focus color="yellow">yellow</button>
+                                <button class="b-btn m1" no-focus color="orange">orange</button>
+                                <button class="b-btn m1" no-focus color="green">green</button>
+                                <button class="b-btn m1" no-focus color="red">red</button>
+                            </div>
+                        </div>
+
 
                         <div class="b-table mb-2">
                             <table>
                                 <tr bg="primary" tx="light">
                                     <th>Clase</th>
                                     <th>Propiedades propias</th>                        
-                                </tr>                      
-                                <tr>
-                                    <td>
-                                        <button class="b-btn" color="primary">b-btn</button>
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li>
-                                                <a href="#color">color</a>
-                                            </li>
-                                            <li>
-                                                <a href="#border">bordered</a>
-                                            </li>
-                                            <li><a href="#efx">no-efx</a></li>
-                                            <li><a href="#focus">no-focus</a></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="3">
-                                        <span id="color" class="tt-sm ">Propiedad color</span>
-
-                                        <div class="mb1">
-                                            <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">blue</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-
-                                        </div>
-
-                                        <div class="tc p-1">
-                                            <div class="col-12 tc">
-                                                <div class="b-box p-1 fit-content ib" bg="dark">
-                                                    <span class="b-fs-sm" tx="white">Para fondos oscuros</span>
-                                                    <br>
-                                                    <button class="b-btn" color="default">default</button>
-                                                </div>
-            
-            
-                                                <div class="b-box p-1 fit-content ib">
-                                                    <span class="b-fs-sm">Para fondos claros</span>
-                                                    <br>
-                                                    <button class="b-btn" color="alternate">alternate</button>
-                                                </div>
-                                            </div>
-
-                                            <button class="b-btn m1" color="link">link</button>
-                                            <button class="b-btn m1" color="green">green</button>
-                                            <button class="b-btn m1" color="chartreuse">chartreuse</button>
-                                            <button class="b-btn m1" color="yellow">yellow</button>
-                                            <button class="b-btn m1" color="orange">orange</button>
-                                            <button class="b-btn m1" color="red">red</button>
-                                            <button class="b-btn m1" color="light-blue">light-blue</button>
-                                            <button class="b-btn m1" color="aqua">aqua</button>
-                                            <button class="b-btn m1" color="turq">turq</button>
-                                            <button class="b-btn m1" color="blue">blue</button>
-                                            <button class="b-btn m1" color="indigo">indigo</button>
-                                            <button class="b-btn m1" color="purple">purple</button>
-                                            <button class="b-btn m1" color="dark-pink">dark-pink</button>
-                                            <button class="b-btn m1" color="pink">pink</button>
-                                            <button class="b-btn m1" color="white">white</button>
-                                            <button class="b-btn m1" color="gray">gray</button>
-                                            <button class="b-btn m1" color="dark-gray">dark-gray</button>
-                                            <button class="b-btn m1" color="black">black</button>
-                                        </div>
-
-                                        <span id="border" class="tt-sm mt2">Propiedad bordered</span>
-                                        <span class="mb1">Esta propiedad quita el efecto de enfoque.</span>
-
-                                        <div class="mb1">
-                                            <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">blue</span>" <span tx="info">bordered</span>&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-
-                                        </div>
-
-                                        <div class="tc p-1">
-                                            <button class="b-btn m1" bordered color="blue">Botón</button>
-                                            <button class="b-btn m1" bordered color="yellow">yellow</button>
-                                            <button class="b-btn m1" bordered color="orange">orange</button>
-                                            <button class="b-btn m1" bordered color="green">green</button>
-                                            <button class="b-btn m1" bordered color="red">red</button>
-                                        </div>
-
-                                        <span id="efx" class="tt-sm mt2">Propiedad no-efx</span>
-                                        <span class="mb1">Esta propiedad quita el efecto de sombreado al pasar sobre el boton.</span>
-
-                                        <div class="mb1">
-                                            <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">blue</span>" <span tx="info">no-efx</span>&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-
-                                        </div>
-
-                                        <div class="tc p-1">
-                                            <button class="b-btn m1" no-efx color="blue">Botón</button>
-                                            <button class="b-btn m1" no-efx color="yellow">yellow</button>
-                                            <button class="b-btn m1" no-efx color="orange">orange</button>
-                                            <button class="b-btn m1" no-efx color="green">green</button>
-                                            <button class="b-btn m1" no-efx color="red">red</button>
-                                        </div>
-                                        <span id="focus" class="tt-sm mt2">Propiedad no-focus</span>
-                                        <span class="mb1">Esta propiedad quita el efecto de enfocado.</span>
-
-                                        <div class="mb1">
-                                            <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">blue</span>" <span tx="info">no-focus</span>&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-
-                                        </div>
-
-                                        <div class="tc p-1">
-                                            <button class="b-btn m1" no-focus color="blue">Botón</button>
-                                            <button class="b-btn m1" no-focus color="yellow">yellow</button>
-                                            <button class="b-btn m1" no-focus color="orange">orange</button>
-                                            <button class="b-btn m1" no-focus color="green">green</button>
-                                            <button class="b-btn m1" no-focus color="red">red</button>
-                                        </div>                                   
-                                    </td>
-                                </tr>
+                                </tr>                                               
                                 <tr>
                                     <td><button class="b-btn-push" color="primary">b-btn-push</button></td>
                                     <td>
@@ -170,7 +226,7 @@
                                         </div>
 
                                         <div class="tc p-1">
-                                            <div class="col-12 tc">
+                                            <div class="div-12 tc">
                                                 <div class="b-box p-1 fit-content ib" bg="dark">
                                                     <span class="b-fs-sm" tx="white">Para fondos oscuros</span>
                                                     <br>
@@ -375,7 +431,7 @@
 
                         <div class="b-box mb-2">
                             <div class="b-box-header"><span class="st-md">b-btn-gradient</span></div>
-                            <div class="b-box-content me-1-all row jc-center">
+                            <div class="b-box-content me-1-all cont jc-center">
                                 <button class="b-btn-gradient" color="primary">primary</button>
                                 <button class="b-btn-gradient" color="secondary">secondary</button>
                                 <button class="b-btn-gradient" color="success">success</button>
@@ -388,7 +444,7 @@
                         </div>
                         <div class="b-box mb-2" bg="black" tx="white">
                             <div class="b-box-header"><span class="st-md">b-btn-neon</span></div>
-                            <div class="b-box-content me-1-all row jc-center">
+                            <div class="b-box-content me-1-all cont jc-center">
                                 <button class="b-btn-neon" gradient color="green">green</button>
                                 <button class="b-btn-neon" gradient color="chartreuse">chartreuse</button>
                                 <button class="b-btn-neon" gradient color="yellow">yellow</button>
