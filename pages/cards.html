@@ -23,7 +23,7 @@
 
     <div class="b-body">
         <div class="cont jc-center">
-            <div class="div-12 div-lg-4 p1">
+            <div class="div-12 div-md-4 p1">
                 <section class="b-box h100" skin="blur" bg="light">
                     <div class="b-box-header"><span class="tt-md">Cards</span></div>
                     <div class="b-box-content">
@@ -31,19 +31,18 @@
              
                         
                         <div class="d-flex jc-center">
-                            <div class="b-card w100" bg="white">
+                            <div class="b-card div-12 div-sm-8 div-md-12" bg="white">
                                 <div b-head capsule>
                                     <span class="tt-sm">Tarjetas de boxy</span>
                                 </div>
                                 <div b-content>
                                     Este es el contenido de la tarjeta que vas a aprender a constrruir con boxy
                                 </div>
-                                <div b-head class="cont">
-                                    <div class="div-6">
-                                        <button class="b-btn-push div-6" color="blue">Guardar</button>
-                                    </div>
-                                    <div class="div-6">
-                                        <button class="b-btn-push div-6" color="red">Guardar</button>
+                                <div b-head>
+                                    <div class="cont jc-around">
+                                        <button class="b-btn-push mb1" color="blue">Guardar</button>
+                                    
+                                        <button class="b-btn-push mb1" color="red">Guardar</button>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +51,7 @@
                 </section>
             </div>
 
-            <div class="div-12 div-lg-8">
+            <div class="div-12 div-md-8 ">
                 <div class="b-box m1" skin="blur" bg="light">
                     <div class="b-box-header"><span class="tt-md">¿Como usar?</span></div>
                     <div class="b-box-content">
@@ -113,12 +112,6 @@
                                 </tr>
                             </table>
                         </div>
-
-                        <div class="mt1">
-                            <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">blue</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
-                        </div>
-
-                        <p class="mb0">Para saber los colores disponibles abre <a href="./colors.html">aquí</a></p>
                     </div>
                 </div>
             </div>
@@ -127,41 +120,32 @@
                 <div class="b-box m1" skin="blur" bg="light">
                     <div class="b-box-header"><span class="tt-md">Construyendo una tarjeta</span></div>
                     <div class="b-box-content">
-                        
+                        <div class="div-12 div-sm-12 div-md-6 div-xl-4 p1" test>
+                            <p>Este componente contiene subcomponentes que a su ves son atributos, que solo funcionan si tiene la clase b-card como padre.</p>
 
-                        <p>Este componente contiene subcomponentes que a su ves son atributos, que solo funcionan si tiene la clase b-card como padre.</p>
-
-                        <div class="b-table mb-2">
-                            <table>
-                                <tr bg="primary" tx="light">
-                                    <th>Subcomponentes</th>
-                                    <th>Atributos</th>                        
-                                </tr>                      
-                                <tr>
-                                    <td>
-                                        <p>Establece un subcomponente añadiendo la letra b como prefijo </p>
-
-                                        <ul>
-                                            <li>b-head (Cabecera de la tarjeta, opcional)</li>
-                                            <li>b-content (Contenido de la tarjea, Requerido)</li>
-                                            <li>b-footer (Parte de inferior de la tarjeta, Opcional)</li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <p>Atributos solo para subcomponentes</p>
-
-                                        <ul>
-                                            <li>b-head (Cabecera de la tarjeta, opcional)</li>
-                                            <li>b-content (Contenido de la tarjea, Requerido)</li>
-                                            <li>b-footer (Parte de inferior de la tarjeta, Opcional)</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="mt1">
+                                <code code>
+                                    &lt;div <span tx="info">class</span>="<span tx="warning">b-card</span>"&gt;<br>
+                                    &nbsp;&nbsp;  &lt;div <span tx="pink">b-head</span>&gt; Subcomponente b-head &lt;/div&gt;<br>
+                                    &nbsp;&nbsp;  &lt;div  <span tx="pink">b-content</span>&gt; Subcomponente b-content &lt;/div&gt;<br>
+                                    &nbsp;&nbsp;  &lt;div  <span tx="pink">b-footer</span>&gt; Subcomponente b-footer &lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </div>
                         </div>
 
-                        <div class="mt1">
-                            <code code>&lt;button class="<span tx="warning">b-btn</span>" color="<span tx="info">blue</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;</code>
+                        <div class="div-12 div-sm-12 div-md-6 div-xl-4 p1" test>
+                            <div class="b-card" bg="white">
+                                <div b-head>
+                                    <span class="tt-sm">Subcomponente b-head</span>
+                                </div>
+                                <div b-content>
+                                    Subcomponente b-content
+                                </div>
+                                <div b-head class="cont">
+                                    Subcomponente b-footer
+                                </div>
+                            </div>
                         </div>
 
                         <p class="mb0">Para saber los colores disponibles abre <a href="./colors.html">aquí</a></p>
@@ -185,7 +169,7 @@
                 </div> -->
 
             <div class="div-2 p1">
-                <div class="b-card w100" bg="primary">
+                <div class="b-card w100" bg="primary" trasparent>
                     <div b-head capsule>
                         <span class="tt-sm">Tarjetas personalizadas</span>
                     </div>
