@@ -73,7 +73,6 @@
                                         <p>Al establecer algunas de las clases se puede utilizar los siguientes atributos</p>
 
                                         <ul>
-                                            <li>square</li>
                                             <li>shadow</li>
                                             <li>night</li>
                                         </ul>
@@ -120,7 +119,7 @@
                 <div class="b-box m1" skin="blur" bg="light">
                     <div class="b-box-header"><span class="tt-md">Construyendo una tarjeta</span></div>
                     <div class="b-box-content">
-                        <div class="div-12 div-sm-12 div-md-6 div-xl-4 p1" test>
+                        <div class="div-12 div-sm-12 div-md-6 div-xl-4 p1">
                             <p>Este componente contiene subcomponentes que a su ves son atributos, que solo funcionan si tiene la clase b-card como padre.</p>
 
                             <div class="mt1">
@@ -134,8 +133,43 @@
                             </div>
                         </div>
 
-                        <div class="div-12 div-sm-12 div-md-6 div-xl-4 p1" test>
+                        <div class="div-12 div-sm-12 div-md-6 div-xl-4 p1 flex jc-center">
                             <div class="b-card" bg="white">
+                                <div b-head>
+                                    <span class="tt-sm">Subcomponente b-head</span>
+                                </div>
+                                <div b-content>
+                                    Subcomponente b-content
+                                </div>
+                                <div b-head class="cont">
+                                    Subcomponente b-footer
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="mb0">Para saber los colores disponibles abre <a href="./colors.html">aquí</a></p>
+                    </div>
+                </div>
+
+                <div class="b-box m1" skin="blur" bg="light">
+                    <div class="b-box-header"><span class="tt-md">Añadiendo atributos</span></div>
+                    <div class="b-box-content">
+                        <div class="div-12 div-sm-12 div-md-6 div-xl-4 p1">
+                            <p>Este componente contiene subcomponentes que a su ves son atributos, que solo funcionan si tiene la clase b-card como padre.</p>
+
+                            <div class="mt1">
+                                <code code>
+                                    &lt;div <span tx="info">class</span>="<span tx="warning">b-card</span>" <span tx="pink">square</span>&gt;<br>
+                                    &nbsp;&nbsp;  &lt;div <span tx="pink">b-head</span>&gt; Subcomponente b-head &lt;/div&gt;<br>
+                                    &nbsp;&nbsp;  &lt;div  <span tx="pink">b-content</span>&gt; Subcomponente b-content &lt;/div&gt;<br>
+                                    &nbsp;&nbsp;  &lt;div  <span tx="pink">b-footer</span>&gt; Subcomponente b-footer &lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </div>
+                        </div>
+
+                        <div class="div-12 div-sm-12 div-md-6 div-xl-4 p1 flex jc-center">
+                            <div class="b-card" bg="white" shadow>
                                 <div b-head>
                                     <span class="tt-sm">Subcomponente b-head</span>
                                 </div>
@@ -216,252 +250,6 @@
                     </div>
                 </div>
             </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" bg="danger">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" bg="info">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" bg="dark">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" bg="light">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div class="b-card-footer" capsule>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="blur" bg="primary">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="blur" bg="secondary">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="blur" bg="success">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="blur" bg="warning">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="blur" bg="danger">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="blur" bg="info">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="blur" bg="dark">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="blur" bg="light">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div class="b-card-footer" capsule>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="transparent" bg="primary">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="transparent" bg="secondary">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="transparent" bg="success">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="transparent" bg="warning">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="transparent" bg="danger">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="transparent" bg="info">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="transparent" bg="dark">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div b-head>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div-2 p1">
-                <div class="b-card w100" skin="transparent" bg="light">
-                    <div b-head capsule>
-                        <span class="tt-sm">Tarjetas personalizadas</span>
-                    </div>
-                    <div b-content capsule>
-                    </div>
-                    <div class="b-card-footer" capsule>
-                        <button class="b-btn-push w100" color="light">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-            <!-- </div> -->
         </div>
 
     <script type="text/javascript" src="../js/boxy.min.js"></script>
