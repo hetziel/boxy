@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G9YSR68RY6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-G9YSR68RY6');
+  </script>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Boxy es un Framework orientado al
+      Front-end para tener una apariencia elegante, con multiples funciones para
+      facilitar el desarrollo.">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOXY - b-btn-gradient Buttons</title>
+    <link rel="stylesheet" href="./../css/boxy.min.css" />
+    <link rel="stylesheet"
+      href="./../vendor/fontawesome-free-6.1.1-web/css/all.min.css"
+      />
+    <script src="./../vendor/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+  </head>
+
+  <body bg-img="./../img/md.jpg" fixed>
+    <header class="b-header" gradient bg="primary">
+      <a href="/" class="b-header-logo">BOXY</a>
+      <div class="b-header-fixed">
+        <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i
+            class="fa-brands fa-github"></i> Github</a>
+      </div>
+    </header>
+
+    <div class="cont jc-center">
+      <div class="div-12 div-lg-10 div-xl-8 p1">
+        <div class="b-box" skin="blur">
+          <div bx-head>
+            <span class="tt-md">Botones | b-btn-gradient</span>
+          </div>
+          <div bx-content>
+            <h1>Clase</h1>
+
+            <p>Para aplicar el diseño al botón solo colocar la clase <span
+                class="px1" bg="dark-gray" tx="green">b-btn-gradient</span> y el
+              atributo
+              <span class="px1" bg="dark-gray" tx="pink">color</span> con el
+              color que desees:</p>
+            <p class="mt0">Para saber los colores disponibles abre <a
+                href="./../pages/colors.html">aquí</a></p>
+
+            <h1>Atributos</h1>
+
+            <div class="b-box mt1 mb1" bg="white">
+              <div bx-head><span class="tt-md">color</span></div>
+              <div bx-content>
+                <p>Aquí se muestran los botones con los colores disponibles, recomendados para fondos oscuros:</p>
+
+                <code code class="mb1">&lt;button class="<span tx="warning">b-btn-gradient</span>"
+                  color="<span tx="info">blue</span>"&gt;<span tx="light">Botón</span>&lt;/button&gt;
+                </code>
+
+                <div class="tc p1" bg="black">
+                  <button class="b-btn-gradient m1" color="green">green</button>
+                  <button class="b-btn-gradient m1" color="chartreuse">chartreuse</button>
+                  <button class="b-btn-gradient m1" color="yellow">yellow</button>
+                  <button class="b-btn-gradient m1" color="orange">orange</button>
+                  <button class="b-btn-gradient m1" color="red">red</button>
+                  <button class="b-btn-gradient m1" color="light-blue">light-blue</button>
+                  <button class="b-btn-gradient m1" color="aqua">aqua</button>
+                  <button class="b-btn-gradient m1" color="turq">turq</button>
+                  <button class="b-btn-gradient m1" color="blue">blue</button>
+                  <button class="b-btn-gradient m1" color="indigo">indigo</button>
+                  <button class="b-btn-gradient m1" color="purple">purple</button>
+                  <button class="b-btn-gradient m1" color="dark-pink">dark-pink</button>
+                  <button class="b-btn-gradient m1" color="pink">pink</button>
+                  <button class="b-btn-gradient m1" color="white">white</button>
+                  <button class="b-btn-gradient m1" color="gray">gray</button>
+                  <button class="b-btn-gradient m1" color="dark-gray">dark-gray</button>
+                  <button class="b-btn-gradient m1" color="black">black</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="../js/boxy.min.js"></script>
+    </body>
+  </html>
