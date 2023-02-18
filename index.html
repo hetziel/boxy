@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Boxy es un Framework orientado al Front-end para tener una apariencia elegante, con multiples funciones para facilitar el desarrollo.">
-    <meta name="robots" content="index,follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BOXY</title>
-    <link rel="stylesheet" href="./css/boxy.min.css" />
-    <link rel="stylesheet" href="./vendor/fontawesome-free-6.1.1-web/css/all.min.css"
-    />
-    <script src="./vendor/fontawesome-free-6.1.1-web/js/all.min.js"></script>
-    <style>
-      .box *{
-        margin: 5px;
-      }
-    </style>
-  </head>
 
-  <body>
-    <header class="b-header" gradient bg="primary">
-      <a href="/" class="b-header-logo">BOXY</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Boxy es un Framework orientado al Front-end para tener una apariencia elegante, con multiples funciones para facilitar el desarrollo.">
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOXY</title>
+  <link rel="stylesheet" href="./css/boxy.min.css" />
+  <link rel="stylesheet" href="./vendor/fontawesome-free-6.1.1-web/css/all.min.css" />
+  <script src="./vendor/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+  <style>
+    .box * {
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="b-header" mobile gradient bg="primary">
+    <div bx-logo>
+      <img src="./img/boxy.ico" alt="Boxy">
+      <a href="/">BOXY</a>
+
+    </div>
+
+    <div bx-content>
+      <a href="pages/buttons.html" class="b-btn-push" color="red">Botones</a>
+      <a href="pages/cards.html" class="b-btn-push" color="orange">Tarjetas</a>
+    </div>
+    <div bx-fixed>
+      <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i>
+        Github</a>
+
+    </div>
+    <div bx-mobile open-nav>
+      <i class="fa fa-bars"></i>
+    </div>
+  </header>
+  <!-- <header class="b-header" gradient bg="primary">
       <div class="b-header-content">
-        <!-- <a href="pages/start.html" class="b-btn" color="green"
+       <a href="pages/start.html" class="b-btn" color="green"
           >Empieza ahora</a
-        > -->
+        > 
       </div>
       <div class="b-header-fixed">
-        <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i> Github</a>
       </div>
       <div class="mobile" open="b-side-nav">
         <i class="fa-solid fa-bars"></i>
       </div>
-    </header>
-    <div b-side-nav>
+    </header> -->
+  <!-- <div b-side-nav>
       <a class="closebtn" close>&times;</a>
       <a href="#">Home</a>
       <a href="#">About</a>
@@ -40,11 +60,11 @@
       <a href="#">Request Quote</a>
       <a href="#">Contact</a>
       <p style="color: #1c3664; text-align: center">Hubover &copy; 2017</p>
-    </div>
+    </div> -->
 
-    <div class="b-body">
-      <!-- Sidebar -->
-      <!-- <div id="side-primero" class="b-side" size="xl" color="white">
+  <div class="b-body">
+    <!-- Sidebar -->
+    <!-- <div id="side-primero" class="b-side" size="xl" color="white">
         <button class="b-nav-header">Empezando</button>
         <div class="b-nav-content">
           <a href="pages/start.html" class="b-btn w100 m1" color="primary"
@@ -122,57 +142,60 @@
           >
         </div>
       </div> -->
-      <!-- Sidebar -->
-      <div class="b-main" bg-img="img/md.jpg">
-        <!-- <div class="toggle" onclick="sideToggle('primero')">
+    <!-- Sidebar -->
+    <div class="b-main" bg-img="img/md.jpg">
+      <!-- <div class="toggle" onclick="sideToggle('primero')">
           <i tx="light" class="fa-brands fa-github"></i>
         </div> -->
 
-        <div bg="white" class="jc-center" style="display: flex; align-items: center;">
-          <div class="div-5 div-xxs-12 div-xs-12 p1">
-            <img src="./img/Team_work.svg" class="w100">
-          </div>
-
-          <div class="div-7 div-xxs-12 div-xs-12 p2">
-            <h1 class="tc">Bienvenidos a Boxy</h1>
-
-              <span class="tt-md tc" tx="blue">¿Qué es Boxy?</span>
-              <p tx="secondary" class="tc">
-                Boxy es una biblioteca multiplataforma que contiene un conjunto de herramientas y un marco de componentes para diseñar sitios web y aplicaciones web. Su objetivo es proporcionar todas las herramientas necesarias para crear hermosas aplicaciones web.
-              </p>
-
-            <div class="w100 tc">
-              <a href="pages/start.html" class="b-btn" color="green" rd="all">Empieza ahora</a>
-            </div>
-
-          </div>
+      <div bg="white" class="jc-center" style="display: flex; align-items: center;">
+        <div class="div-5 div-xxs-12 div-xs-12 p1">
+          <img src="./img/Team_work.svg" class="w100">
         </div>
 
-        <div class="cont jc-center" style="align-items: stretch;">
-          
+        <div class="div-7 div-xxs-12 div-xs-12 p2">
+          <h1 class="tc">Bienvenidos a Boxy</h1>
 
-          <div class="div-8 div-xs-12">
+          <span class="tt-md tc" tx="blue">¿Qué es Boxy?</span>
+          <p tx="secondary" class="tc">
+            Boxy es una biblioteca multiplataforma que contiene un conjunto de herramientas y un marco de componentes
+            para diseñar sitios web y aplicaciones web. Su objetivo es proporcionar todas las herramientas necesarias
+            para crear hermosas aplicaciones web.
+          </p>
 
-            <div class="b-box m1"  skin="blur" bg="light">
-              <div class="b-box-header">
-                <span class="tt-md" tx="dark">Nuevas características</span>
-              </div>
-              <div class="b-box-content box">
-                <div class="cont jc-center mt1">
-                  <p>Por motivos de actualización de la version a Boxy 0.2 ocultamos algunas características para mejorar el diseño y la documentación.</p>
-                  <a href="pages/buttons.html" class="b-btn-push" color="red">Botones</a>
-                  <a href="pages/cards.html" class="b-btn-push" color="orange">Tarjetas</a>
-                  <a href="pages/grid.html" class="b-btn-push" color="purple">Sistema Grid</a>
-                  <!-- <a href="pages/bg-img.html" class="b-btn-gradient" color="red">BG-IMG</a> -->
-                  <!-- <a href="pages/colors.html" class="b-btn-gradient" color="primary">Colores</a> -->
-                  <!-- <a href="pages/header.html" class="b-btn-gradient" color="primary" >Header</a> -->
-                  <!-- <a href="pages/typography.html" class="b-btn-push" color="success">Tipografía</a> -->
-                  <!-- <button class="b-btn-push" color="primary" open-modal="1">Modal</button> -->
-                </div>
+          <div class="w100 tc">
+            <a href="pages/start.html" class="b-btn" color="green" rd="all">Empieza ahora</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="cont jc-center" style="align-items: stretch;">
+
+
+        <div class="div-8 div-xs-12">
+
+          <div class="b-box m1" skin="blur" bg="light">
+            <div class="b-box-header">
+              <span class="tt-md" tx="dark">Nuevas características</span>
+            </div>
+            <div class="b-box-content box">
+              <div class="cont jc-center mt1">
+                <p>Por motivos de actualización de la version a Boxy 0.2 ocultamos algunas características para mejorar
+                  el diseño y la documentación.</p>
+                <a href="pages/buttons.html" class="b-btn-push" color="red">Botones</a>
+                <a href="pages/cards.html" class="b-btn-push" color="orange">Tarjetas</a>
+                <a href="pages/grid.html" class="b-btn-push" color="purple">Sistema Grid</a>
+                <!-- <a href="pages/bg-img.html" class="b-btn-gradient" color="red">BG-IMG</a> -->
+                <!-- <a href="pages/colors.html" class="b-btn-gradient" color="primary">Colores</a> -->
+                <!-- <a href="pages/header.html" class="b-btn-gradient" color="primary" >Header</a> -->
+                <!-- <a href="pages/typography.html" class="b-btn-push" color="success">Tipografía</a> -->
+                <!-- <button class="b-btn-push" color="primary" open-modal="1">Modal</button> -->
               </div>
             </div>
+          </div>
 
-            <!-- <div class="b-box m1" bg="light">
+          <!-- <div class="b-box m1" bg="light">
               <div class="b-box-header">
                 <span class="tt-md" tx="dark">Lista de cambios</span>
               </div>
@@ -189,12 +212,12 @@
                 </ul>
               </div>
             </div> -->
-          </div>
         </div>
       </div>
     </div>
-    <!-- Modales -->
-    <!-- <div modal="1" class="b-modal-wrapper" skin="blur" position="2" in-out>
+  </div>
+  <!-- Modales -->
+  <!-- <div modal="1" class="b-modal-wrapper" skin="blur" position="2" in-out>
       <div class="b-modal-content" skin="transparent">
         <div class="b-modal-head">
           <span class="b-modal-title">Modales</span>
@@ -212,15 +235,16 @@
         </div>
       </div>
     </div> -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9YSR68RY6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G9YSR68RY6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-G9YSR68RY6');
-</script>
-    <script src="./js/boxy.min.js"></script>
-  </body>
+    gtag('config', 'G-G9YSR68RY6');
+  </script>
+  <script src="./js/boxy.min.js"></script>
+</body>
+
 </html>
