@@ -11,56 +11,40 @@
   <link rel="stylesheet" href="./css/boxy.min.css" />
   <link rel="stylesheet" href="./vendor/fontawesome-free-6.1.1-web/css/all.min.css" />
   <script src="./vendor/fontawesome-free-6.1.1-web/js/all.min.js"></script>
-  <style>
-    .box * {
-      margin: 5px;
-    }
-  </style>
 </head>
 
 <body>
 
-  <header class="b-header" mobile gradient bg="primary">
+  <header class="b-header" mobile bg="blue">
     <div bx-logo>
       <img src="./img/boxy.ico" alt="Boxy">
-      <a href="/">BOXY</a>
-
+      <span>BOXY</span>
     </div>
 
     <div bx-content>
-      <a href="pages/buttons.html" class="b-btn-push" color="red">Botones</a>
-      <a href="pages/cards.html" class="b-btn-push" color="orange">Tarjetas</a>
+      <button class="b-btn" color="pink">¿Que es Boxy?</button>
+      <button class="b-btn" color="blue">3</button>
+      <button class="b-btn" color="red">4</button>
+      <button class="b-btn" color="warning">5 Us</button>
+      <button class="b-btn" color="Green">Send</button>
+
+      <div bx-mobile-bar>
+
+        <div>
+          <input class="b-input" type="text">
+          <button class="b-btn" icon color="blue"><i class="fa fa-search"></i></button>
+        </div>
+        <h1>Este es un titulo</h1>
+      </div>
     </div>
-    <div bx-fixed>
+    <div bx-fixed show>
       <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i class="fa-brands fa-github"></i>
         Github</a>
-
     </div>
-    <div bx-mobile open-nav>
+    <div bx-mobile open="b-side-nav" open-nav>
       <i class="fa fa-bars"></i>
     </div>
   </header>
-  <!-- <header class="b-header" gradient bg="primary">
-      <div class="b-header-content">
-       <a href="pages/start.html" class="b-btn" color="green"
-          >Empieza ahora</a
-        > 
-      </div>
-      <div class="b-header-fixed">
-      </div>
-      <div class="mobile" open="b-side-nav">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </header> -->
-  <!-- <div b-side-nav>
-      <a class="closebtn" close>&times;</a>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Request Quote</a>
-      <a href="#">Contact</a>
-      <p style="color: #1c3664; text-align: center">Hubover &copy; 2017</p>
-    </div> -->
 
   <div class="b-body">
     <!-- Sidebar -->
@@ -143,6 +127,11 @@
         </div>
       </div> -->
     <!-- Sidebar -->
+
+    <div class="b-side" mobile bg="white">
+      <div mobile-side><i class="fa-solid fa-arrows-left-right"></i></div>
+      dfd
+    </div>
     <div class="b-main" bg-img="img/md.jpg">
       <!-- <div class="toggle" onclick="sideToggle('primero')">
           <i tx="light" class="fa-brands fa-github"></i>
