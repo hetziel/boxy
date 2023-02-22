@@ -2,6 +2,16 @@
 <html lang="es">
 
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G9YSR68RY6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+  
+      gtag('config', 'G-G9YSR68RY6');
+    </script>
     <meta charset="UTF-8" />
     <meta name="description"
       content="Boxy es un Framework orientado al Front-end para tener una
@@ -18,146 +28,14 @@
 
   <body>
 
-    <header class="b-header" mobile bg="blue">
-      <div bx-logo>
-        <img src="./img/boxy.ico" alt="Boxy">
-        <span>BOXY</span>
-      </div>
-
-      <div bx-content>
-        <button class="b-btn" color="pink">¿Que es Boxy?</button>
-        <button class="b-btn" color="blue">3</button>
-        <button class="b-btn" color="red">4</button>
-        <button class="b-btn" color="warning">5 Us</button>
-        <button class="b-btn" color="Green">Send</button>
-
-        <div bx-mobile-bar>
-
-          <div>
-            <input class="b-input" type="text">
-            <button class="b-btn" icon color="blue"><i class="fa fa-search"></i></button>
-          </div>
-          <h1>Este es un titulo</h1>
-        </div>
-      </div>
-      <div bx-fixed show>
-        <a href="https://github.com/hetziel/boxy" class="b-btn" color="default"><i
-            class="fa-brands fa-github"></i>
-          Github</a>
-      </div>
-      <div bx-mobile open="b-side-nav" open-nav>
-        <i class="fa fa-bars"></i>
-      </div>
-    </header>
+    <div boxy="header"></div>
 
     <div class="b-body">
-      <!-- Sidebar -->
-      <!-- <div id="side-primero" class="b-side" size="xl" color="white">
-        <button class="b-nav-header">Empezando</button>
-        <div class="b-nav-content">
-          <a href="pages/start.html" class="b-btn w100 m1" color="primary"
-            >Instalación</a
-          >
-        </div>
-
-        <button class="b-nav-header">Nuevas características</button>
-        <div class="b-nav-content">
-          <a
-            href="pages/header.html"
-            class="b-btn w100 m1"
-            color="secondary"
-            rd="none"
-            >Header</a
-          >
-          <button class="b-btn w100 m1" color="primary">Botones</button>
-          <button class="b-btn-push w100 m1" color="primary">
-            Tipografía
-          </button>
-        </div>
-
-        <button class="b-nav-header">Contenido</button>
-        <div class="b-nav-content">
-          <a
-            href="pages/colors.html"
-            class="b-btn w100 mt1"
-            color="secondary"
-            rd="none"
-            >Colores</a
-          >
-          <a
-            href="pages/typography.html"
-            class="b-btn w100"
-            color="secondary"
-            rd="none"
-            >Tipografía</a
-          >
-        </div>
-
-        <button class="b-nav-header">Componentes</button>
-        <div class="b-nav-content">
-
-          <a
-            href="pages/header.html"
-            class="b-btn w100 mt1"
-            color="secondary"
-            rd="none"
-            >Header</a
-          >
-          <a
-            href="pages/buttons.html"
-            class="b-btn w100"
-            color="secondary"
-            rd="none"
-            >Botones</a
-          >
-          <a
-            href="pages/modal.html"
-            class="b-btn w100"
-            color="secondary"
-            rd="none"
-            >Modal</a
-          >
-        </div>
-        <button class="b-nav-header">Funciones Especiales</button>
-        <div class="b-nav-content">
-
-          <a
-            href="pages/bg-img.html"
-            class="b-btn w100 mt1"
-            color="secondary"
-            rd="none"
-            >bg-img</a
-          >
-        </div>
-      </div> -->
-      <!-- Sidebar -->
-
       <div class="b-side" mobile="md" bg="white">
         <div mobile-side hide><i class="fa-solid fa-arrows-left-right"></i></div>
-        <div class="b-menu">
-          <button bx-title>Empezando</button>
-          <div bx-content>
-            <div class="p1">
-            <button class="b-btn" color="green">Instalación</button>
-
-            </div>
-          </div>
-
-          <button bx-title>Section 2</button>
-          <div bx-content>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-        </div>
+        <div boxy="menu"></div>
       </div>
       <div class="b-main" bg-img="img/md.jpg">
-        <!-- <div class="toggle" onclick="sideToggle('primero')">
-          <i tx="light" class="fa-brands fa-github"></i>
-        </div> -->
         <div bg="white" class="jc-center" style="display: flex; align-items:
           center;">
           <div class="div-5 div-xxs-12 div-xs-12 p1">
@@ -202,66 +80,14 @@
                   <a href="pages/cards.html" class="b-btn-push" color="orange">Tarjetas</a>
                   <a href="pages/grid.html" class="b-btn-push" color="purple">Sistema
                     Grid</a>
-                  <!-- <a href="pages/bg-img.html" class="b-btn-gradient" color="red">BG-IMG</a> -->
-                  <!-- <a href="pages/colors.html" class="b-btn-gradient" color="primary">Colores</a> -->
-                  <!-- <a href="pages/header.html" class="b-btn-gradient" color="primary" >Header</a> -->
-                  <!-- <a href="pages/typography.html" class="b-btn-push" color="success">Tipografía</a> -->
-                  <!-- <button class="b-btn-push" color="primary" open-modal="1">Modal</button> -->
                 </div>
               </div>
             </div>
-
-            <!-- <div class="b-box m1" bg="light">
-              <div class="b-box-header">
-                <span class="tt-md" tx="dark">Lista de cambios</span>
-              </div>
-              <div class="b-box-content">
-                <span>Boxy 0.1.7</span>
-                <ul>
-                  <li>Función para configurar los colores del tema <a href="pages/set-color.html">Ver aquí</a></li>
-                </ul>
-                <span>Boxy 0.1.6.2917</span>
-                <ul>
-                  <li>Nuevo botón b-btn-neon <a href="pages/buttons.html">Ver aquí</a></li>
-                  <li>Nuevos colores <a href="pages/colors.html">Ver aquí</a></li>
-                  <li>Función para cambiar imagen de fondo <a href="pages/bg-img.html">Ver aquí</a></li>
-                </ul>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
-    </div>
-    <!-- Modales -->
-    <!-- <div modal="1" class="b-modal-wrapper" skin="blur" position="2" in-out>
-      <div class="b-modal-content" skin="transparent">
-        <div class="b-modal-head">
-          <span class="b-modal-title">Modales</span>
-          <button close-modal class="b-btn-icon" close-modal>&times;</button>
-        </div>
-        <div class="b-modal-body">
-          <div class="b-card-container w100" bg="light">
-            <div class="b-card-header" st="radius">
-              <span class="tt-sm">De click a abrir para abrir las modales</span>
-            </div>
-            <div class="b-card-footer" st="radius">
-              <a href="./pages/modal.html" class="b-btn w100" color="primary">Abrir</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Google tag (gtag.js) -->
-    <script async
-      src="https://www.googletagmanager.com/gtag/js?id=G-G9YSR68RY6"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      <script src="./js/boxy-live.min.js"></script>
+      <script src="./js/boxy.min.js"></script>
+    </body>
 
-    gtag('config', 'G-G9YSR68RY6');
-  </script>
-    <script src="./js/boxy.min.js"></script>
-  </body>
-
-</html>
+  </html>
