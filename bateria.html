@@ -8,13 +8,14 @@
 
   <body>
     <div class="bateria">
+        prueba touch
       <button class="kick">Kick</button>
     </div>
 
     <script>
       var audio = new Audio("./samples/707-Kick.ogg");
 
-      document.addEventListener("click", (e) => {
+      document.addEventListener("touchstart", (e) => {
         let kick = e.target.closest(".kick");
 
         if (kick) {
