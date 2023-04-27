@@ -1,0 +1,48 @@
+<div>
+  <div b-view="header"></div>
+
+  <div class="b-body">
+    <div class="b-main">
+      <div class="m1 w100">
+        <button b-go="home" class="b-btn" color="blue">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+
+      <div class="b-box m1">
+        <div bx-head>BG-IMG</div>
+
+        <div bx-content>
+          <p>
+            Cambia el color de fondo de cualquier contenedor con el atributo
+            <span code short>bg-img=""</span> con la url de la imagen.
+          </p>
+
+          <div
+            style="width: 200px; height: 200px"
+            class="mb2"
+            bg-img="/assets/img/md.jpg"
+          ></div>
+
+          <div class="col-lg-8 col-12">
+            <div class="b-box m-1" skin="blur" bg="white">
+              <div bx-head>
+                <span class="tt-md" tx="dark">Ejemplos de uso</span>
+              </div>
+              <div bx-content tx="white">
+                <div class="b-box mt-1" docs-bg-img>
+                  <div bg-img="/img/test.jpg">
+                    <span>bg-img="test.jpg"</span>
+                  </div>
+                  <div bg-img="/img/test.jpg" fixed><span>fixed</span></div>
+                  <div bg-img="/img/test.jpg" contain><span>contain</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div b-code="bg-img"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,382 @@
+<div>
+  <div b-view="header"></div>
+
+  <div class="b-body">
+    <div class="b-main">
+      <div class="m1 w100">
+        <button b-go="home" class="b-btn" color="blue">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+
+      <div class="b-box m1">
+        <div bx-head>BG-IMG</div>
+
+        <div bx-content>
+          <div class="col-12 col-lg-8">
+            <div class="b-box m-1" skin="blur" bg="light">
+                <div class="b-box-header"><span class="tt-md">Modal</span></div>
+                <div class="b-box-content">
+
+                    <p>Para uso de este componente se utiliza la estructura establecida: <br>
+                        <br>
+                        <span>Acciones de modal (Atributos) </span>
+                        <ul>
+                            <li>
+                                <span tx="blue" class="fw-bold">open-modal="identificador"</span> es un identificador para activar la modal con el mismo identificador.
+                            </li>
+                            <li>
+                                <span tx="blue" class="fw-bold">modal="identificador"</span> es el receptor del activador que recibe el identificador.
+                            </li>
+                            <li>
+                                <span tx="blue" class="fw-bold">close-modal</span> es la acción de cerrar la modal, puede colocarse en <span tx="danger" class="fw-bold">b-modal-head</span> y <span tx="danger" class="fw-bold">b-modal-body</span>
+                            </li>
+                        </ul>
+
+
+                        <span>Estructura de la modal (clases)</span>
+
+                        <ul>
+                            <li><span tx="danger" class="fw-bold">b-modal-wrapper</span> es la envoltura de la modal la cual podemos dar click afuera de la modal y esta se cerrará.
+                                <ul>
+                                    <li>
+                                        <span tx="danger" class="fw-bold">b-modal-content</span> es el componente solido de la modal
+                                        <ul>
+                                            <li>
+                                                <span tx="danger" class="fw-bold">b-modal-head</span> es el espacio donde va el título de la modal y botón de cierre.
+                                            </li>
+                                            <li>
+                                                <span tx="danger" class="fw-bold">b-modal-body</span> es el espacio donde va el cuerpo de la modal
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+
+                    <div class="b-windows">
+                        <div class="head">
+                            <span default b-set="{{ step1 = 1 }}" class="title">Vista Previa</span>
+                            <span b-set="{{ step1 = 2 }}" class="title">Código</span>
+                        </div>
+
+                        <div class="body p-1" b-if="{{ step1 == '1'}}">
+                            <button class="b-btn" color="primary" open-modal="ejemplo1">Abrir modal</button>
+                        </div>
+
+                        <div class="body" b-if="{{ step1 == '2'}}">
+                            <div class="copy-content h-100">
+                                <code code toCopy="step1">
+                                   <span tx="secondary">&lt;!-- Activador --&gt;</span> <br>
+
+                                    &lt;button class="b-btn" color="primary" <span tx="info">open-modal</span>="<span tx="warning">ejemplo1</span>">Ejemplo 1&lt;/button&gt; <br><br>
+
+                                   <span tx="secondary">&lt;!-- Modal --&gt;</span> <br>
+
+                                    &lt;div <span tx="info">modal</span>="<span tx="warning">ejemplo1</span>" class="b-modal-wrapper"&gt;<br>
+                                    &nbsp;    &lt;div class="b-modal-content"&gt; <br>
+                                    &nbsp;&nbsp;        &lt;div class="b-modal-body"&gt; <br>
+                                    &nbsp;&nbsp;&nbsp;            &lt;p&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;                Mi billetera<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;                es como una cebolla<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;                al abrirla me hace llorar.<br>
+                                    &nbsp;&nbsp;&nbsp;            &lt;/p&gt;<br>
+                                    &nbsp;&nbsp;        &lt;/div&gt;<br>
+                                    &nbsp;    &lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                                <button copyThis="step1" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="tt-md">Posicionamiento</p>
+                    <p>La ubicación de la modal es importante en muchas ocasiones y Boxy lo hace en modo teclado numérico de teléfonos con <span class="fw-bold" tx="blue">position=""</span>
+                    con valores del 1 al 9</p>
+
+                    <div class="b-windows">
+                        <div class="head">
+                            <span default b-set="{{ step2 = 1 }}" class="title">Vista Previa</span>
+                            <span b-set="{{ step2 = 2 }}" class="title">Código</span>
+                        </div>
+
+                        <div class="body p-1 tc" b-if="{{ step2 == '1'}}">
+                            <button class="b-btn mb-1" color="primary" open-modal="pos1">Posición 1</button>
+                            <button class="b-btn mb-1" color="primary" open-modal="pos2">Posición 2</button>
+                            <button class="b-btn mb-1" color="primary" open-modal="pos3">Posición 3</button> <br>
+                            <button class="b-btn mb-1" color="primary" open-modal="pos4">Posición 4</button>
+                            <button class="b-btn mb-1" color="primary" open-modal="pos5">Posición 5</button>
+                            <button class="b-btn mb-1" color="primary" open-modal="pos6">Posición 6</button> <br>
+                            <button class="b-btn mb-1" color="primary" open-modal="pos7">Posición 7</button>
+                            <button class="b-btn mb-1" color="primary" open-modal="pos8">Posición 8</button>
+                            <button class="b-btn mb-1" color="primary" open-modal="pos9">Posición 9</button>
+                        </div>
+
+                        <div class="body h-8" b-if="{{ step2 == '2'}}">
+                            <div class="copy-content h-100">
+                                <code code toCopy="step2">
+                                   <span tx="secondary">&lt;!-- Activador --&gt;</span> <br>
+
+                                    &lt;button class="b-btn" color="primary" <span tx="info">open-modal</span>="<span tx="warning">ejemplo2</span>">Ejemplo 2&lt;/button&gt; <br><br>
+
+                                   <span tx="secondary">&lt;!-- Modal --&gt;</span> <br>
+
+                                    &lt;div modal="ejemplo2" <span tx="light-blue">position</span>="<span tx="warning">1</span>" class="b-modal-wrapper"&gt;<br>
+                                    &nbsp;    &lt;div class="b-modal-content"&gt; <br>
+                                    &nbsp;&nbsp;        &lt;div class="b-modal-body"&gt; <br>
+                                    &nbsp;&nbsp;&nbsp;            &lt;p&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;                Mi billetera<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;                es como una cebolla<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;                al abrirla me hace llorar.<br>
+                                    &nbsp;&nbsp;&nbsp;            &lt;/p&gt;<br>
+                                    &nbsp;&nbsp;        &lt;/div&gt;<br>
+                                    &nbsp;    &lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                                <button copyThis="step2" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tt-md">Estilos</p>
+                    <p>Para cambiar la apariencia de entrada y la modal se utiliza el atributo <span class="fw-bold" tx="blue">skin=""</span>
+                    con estos valores:</p>
+                    <ul>
+                        <li>blur (efecto de borroso)</li>
+                        <li>fade (suavidad de entrada)</li>
+                    </ul>
+                    <p>Además de la apariencia se puedes añadir efectos de entrada y salida con el atributo <span class="fw-bold" tx="blue">fx=""</span>
+                    con estos valores:</p>
+                    <ul>
+                        <li>in-out (agranda y reduce)</li>
+                    </ul>
+
+
+                    <p>Añade botones o links de navegación fijos al final con b-header-fixed</p>
+
+                    <div class="b-windows">
+                        <div class="head">
+                            <span default b-set="{{ step1 = 1 }}" class="title">Vista Previa</span>
+                            <span b-set="{{ step1 = 2 }}" class="title">Código</span>
+                        </div>
+
+                        <div class="body p-1" b-if="{{ step1 == '1'}}">
+                            <button class="b-btn" color="primary" open-modal="estilos1">Blur</button>
+                            <button class="b-btn" color="primary" open-modal="estilos2">Fade</button>
+                            <button class="b-btn" color="primary" open-modal="estilos3">in-out</button>
+                            <button class="b-btn" color="primary" open-modal="estilos4">Blur in-out</button>
+                            <button class="b-btn" color="primary" open-modal="estilos5">Fade in-out</button>
+                        </div>
+
+                        <div class="body" b-if="{{ step1 == '2'}}">
+                            <div class="copy-content h-100">
+                                <code code toCopy="step1">
+                                   <span tx="secondary">&lt;!-- Activador --&gt;</span> <br>
+
+                                    &lt;button class="b-btn" color="primary" <span tx="info">open-modal</span>="<span tx="warning">estilos1</span>">Blur 1&lt;/button&gt; <br><br>
+
+                                   <span tx="secondary">&lt;!-- Modal --&gt;</span> <br>
+
+                                    &lt;div modal="estilos1" class="b-modal-wrapper" <span tx="info">skin</span>="<span tx="warning">blur</span>"&gt;<br>
+                                    &nbsp;    &lt;div class="b-modal-content"&gt; <br>
+                                    &nbsp;&nbsp;        &lt;div class="b-modal-body"&gt; <br>
+                                    &nbsp;&nbsp;&nbsp;            &lt;p&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;                Si te das cuenta, el fondo se pone borroso
+                                    &nbsp;&nbsp;&nbsp;            &lt;/p&gt;<br>
+                                    &nbsp;&nbsp;        &lt;/div&gt;<br>
+                                    &nbsp;    &lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                                <button copyThis="step1" class="btn-copy"><i class="fa fa-copy" tx="light"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="b-modal-wrapper" modal="ejemplo1">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Una triste historia</span>
+            <button class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>
+                Mi billetera <br>
+                es como una cebolla <br>
+                al abrirla me hace llorar.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div modal="pos1" class="b-modal-wrapper" position ="1">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Posición</span>
+            <button close-modal class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>En estos momentos estoy usando la posición 1</p>
+            <p>Inténtalo tu con otros números</p>
+        </div>
+    </div>
+</div>
+<div modal="pos2" class="b-modal-wrapper" position ="2">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Posición</span>
+            <button close-modal class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>En estos momentos estoy usando la posición 2</p>
+            <p>Inténtalo tu con otros números</p>
+        </div>
+    </div>
+</div>
+<div modal="pos3" class="b-modal-wrapper" position ="3">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Posición</span>
+            <button close-modal class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>En estos momentos estoy usando la posición 3</p>
+            <p>Inténtalo tu con otros números</p>
+        </div>
+    </div>
+</div>
+<div modal="pos4" class="b-modal-wrapper" position ="4">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Posición</span>
+            <button close-modal class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>En estos momentos estoy usando la posición 4</p>
+            <p>Inténtalo tu con otros números</p>
+        </div>
+    </div>
+</div>
+<div modal="pos5" class="b-modal-wrapper" position ="5">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Posición</span>
+            <button close-modal class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>En estos momentos estoy usando la posición 5</p>
+            <p>Inténtalo tu con otros números</p>
+        </div>
+    </div>
+</div>
+<div modal="pos6" class="b-modal-wrapper" position ="6">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Posición</span>
+            <button close-modal class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>En estos momentos estoy usando la posición 6</p>
+            <p>Inténtalo tu con otros números</p>
+        </div>
+    </div>
+</div>
+<div modal="pos7" class="b-modal-wrapper" position ="7">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Posición</span>
+            <button close-modal class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>En estos momentos estoy usando la posición 7</p>
+            <p>Inténtalo tu con otros números</p>
+        </div>
+    </div>
+</div>
+<div modal="pos8" class="b-modal-wrapper" position ="8">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Posición</span>
+            <button close-modal class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>En estos momentos estoy usando la posición 8</p>
+            <p>Inténtalo tu con otros números</p>
+        </div>
+    </div>
+</div>
+<div modal="pos9" class="b-modal-wrapper" position ="9">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Posición</span>
+            <button close-modal class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>En estos momentos estoy usando la posición 9</p>
+            <p>Inténtalo tu con otros números</p>
+        </div>
+    </div>
+</div>
+<div class="b-modal-wrapper" modal="estilos1" skin="blur">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Blur</span>
+            <button class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>Si te das cuenta, el fondo se pone borroso</p>
+        </div>
+    </div>
+</div>
+<div class="b-modal-wrapper" modal="estilos2" skin="fade">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">Fade</span>
+            <button class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>Si te das cuenta, la modal tiene una transición suave</p>
+        </div>
+    </div>
+</div>
+<div class="b-modal-wrapper" modal="estilos3" fx="in-out">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">in-out</span>
+            <button class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>Si te das cuenta, la modal tiene una transición suave</p>
+        </div>
+    </div>
+</div>
+<div class="b-modal-wrapper" modal="estilos4" skin="blur" fx="in-out">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">in-out</span>
+            <button class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>Si te das cuenta, la modal tiene una transición suave</p>
+        </div>
+    </div>
+</div>
+<div class="b-modal-wrapper" modal="estilos5" skin="fade" fx="in-out">
+    <div class="b-modal-content">
+        <div class="b-modal-head">
+            <span class="b-modal-title">in-out</span>
+            <button class="b-btn-icon" close-modal>&times;</button>
+        </div>
+        <div class="b-modal-body">
+            <p>Si te das cuenta, la modal tiene una transición suave</p>
+        </div>
+    </div>
+</div>
+</div>
