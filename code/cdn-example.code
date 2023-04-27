@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bienvenido a Boxy</title>
+    <link rel="stylesheet" href="https://boxy.pages.dev/css/boxy.min.css" />
+  </head>
+  <body>
+    <h1>Hola Mundo!</h1>
+    <script type="text/javascript" src="https://boxy.pages.dev/js/boxy.min.js"></script>
+  </body>
+</html>
