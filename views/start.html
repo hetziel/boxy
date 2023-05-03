@@ -1,28 +1,40 @@
-<div class="h100" bg-img="/img/md.jpg">
+<div class="h100" bg-img="/img/start_bg.png">
   <div class="b-body">
-    <div class="b-main" bg-img="img/md.jpg">
+    <div class="b-side" mobile bg="black 4">
+      <div mobile-side hide><i class="fa-solid fa-arrows-left-right"></i></div>
+      <div b-view="desktop"></div>
+    </div>
+    <div class="b-main" bg-dimg="img/start_bg.jpg">
       <div
-        bg="white"
-        class="jc-center"
-        style="display: flex; align-items: center"
+        style="
+          height: 200px;
+          display: flex;
+          align-items: center;
+          position: relative;
+        "
       >
-        <div class="div-8 div-lg-4 p1">
-          <img src="/img/start.svg" class="w100" />
-        </div>
-
-        <div class="div-12 div-lg-6 p2">
-          <span class="tt-md tc" tx="blue">Comienza con Boxy</span>
-          <p tx="secondary" class="tc">
-            Boxy es un Framework orientado al Front-end para tener una
-            apariencia elegante, con multiples funciones para facilitar el
-            desarrollo.
-          </p>
-        </div>
+        <span
+          tx="white"
+          style="font-family: 'Fredoka One'; font-size: 4rem; margin-left: 4rem"
+          >BOXY</span
+        >
+        <span
+          tx="red"
+          style="
+            font-family: 'Fredoka One';
+            font-size: 2rem;
+            margin-left: 4rem;
+            position: absolute;
+            top: 60%;
+            left: 100px;
+          "
+          >Beta</span
+        >
       </div>
 
-      <div class="cont jc-center" style="align-items: stretch">
-        <div class="div-12">
-          <div class="b-box m1" skin="blur" bg="light">
+      <div class="cont" style="align-items: stretch">
+        <div class="div-12 div-md-6">
+          <div class="b-box m1" tx="white">
             <div bx-heaD>
               <span class="tt-sm">Inicio rápido</span>
             </div>

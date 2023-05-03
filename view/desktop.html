@@ -50,10 +50,13 @@
       <img bx-icon src="img/boxy.ico" />
       <span bx-title>Headers</span>
     </div>
-    <div bx-item b-go="contact/cv">
-      <span bx-status>Beta</span>
-      <img bx-icon src="img/boxy.ico" />
-      <span bx-title>CV</span>
-    </div>
+   
+    <foreach value="item in desktop">
+      <div bx-item b-go="{{ $item.link }}">
+        <span bx-status>Beta</span>
+        <img bx-icon b:src="{{ $item.image }}" />
+        <span bx-title>{{ $item.title }}</span>
+      </div>
+    </foreach>
   </div>
 </div>
