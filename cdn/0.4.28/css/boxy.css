@@ -4392,6 +4392,7 @@ body::before:hover {
   flex-direction: column;
   cursor: default;
   position: relative;
+  width: 54px;
 }
 .b-desktop > [bx-item] > [bx-icon] {
   user-select: none;

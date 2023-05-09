@@ -1,17 +1,17 @@
 <div bx-content>
+  <div bg="black"><span tx="white" id="time"></span></div>
   <div class="b-desktop">
-    <div bx-item b-go="start">
-      <img bx-icon src="desktop/start.png" />
-      <span bx-title>Start</span>
-    </div>
-    <div bx-item b-go="second">
-      <img bx-icon src="desktop/home.png" />
-      <span bx-title>Test</span>
-    </div>
-    <div bx-item b-go="content/grid">
-      <img bx-icon src="desktop/grid.png" />
-      <span bx-title>Grid</span>
-    </div>
+    
+    <foreach value="item in desktop">
+      <div bx-item b-go="{{ $item.link }}">
+        <if value="{{ $item.status }}">
+          <span bx-status>{{ $item.status }}</span>
+        </if>
+        <img bx-icon b:src="{{ $item.image }}" />
+        <span bx-title>{{ $item.title }}</span>
+      </div>
+    </foreach>
+
     <div bx-item b-go="content/box">
       <img bx-icon src="desktop/box.png" />
       <span bx-title>Box</span>
@@ -51,12 +51,5 @@
       <span bx-title>Headers</span>
     </div>
    
-    <foreach value="item in desktop">
-      <div bx-item b-go="{{ $item.link }}">
-        <span bx-status>Beta</span>
-        <img bx-icon b:src="{{ $item.image }}" />
-        <span bx-title>{{ $item.title }}</span>
-      </div>
-    </foreach>
   </div>
 </div>
