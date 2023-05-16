@@ -7,47 +7,34 @@
         <if value="{{ $item.status }}">
           <span bx-status>{{ $item.status }}</span>
         </if>
-        <img bx-icon b:src="{{ $item.image }}" />
+        <img bx-icon b:src="/{{ $item.image }}" />
         <span bx-title>{{ $item.title }}</span>
       </div>
     </foreach>
 
-    <div bx-item b-go="content/box">
-      <img bx-icon src="desktop/box.png" />
-      <span bx-title>Box</span>
-    </div>
-    <div bx-item b-go="content/bg-img">
-      <img bx-icon src="desktop/bg-img.png" />
-      <span bx-title>BG-IMG</span>
-    </div>
-    <div bx-item b-go="content/buttons">
-      <span bx-status>Beta</span>
-      <img bx-icon src="img/boxy.ico" />
-      <span bx-title>Buttons</span>
-    </div>
     <div bx-item b-go="content/cards">
       <span bx-status>Beta</span>
-      <img bx-icon src="img/boxy.ico" />
-      <span bx-title>Cards</span>
+      <img bx-icon src="/img/boxy.ico" />
+      <span bx-title>@("home.cards")</span>
     </div>
     <div bx-item b-go="content/colors">
       <span bx-status>Beta</span>
-      <img bx-icon src="img/boxy.ico" />
+      <img bx-icon src="/img/boxy.ico" />
       <span bx-title>Colores</span>
     </div>
     <div bx-item b-go="content/typography">
       <span bx-status>Beta</span>
-      <img bx-icon src="img/boxy.ico" />
+      <img bx-icon src="/img/boxy.ico" />
       <span bx-title>Tipografía</span>
     </div>
     <div bx-item b-go="content/modals">
       <span bx-status>Beta</span>
-      <img bx-icon src="img/boxy.ico" />
+      <img bx-icon src="/img/boxy.ico" />
       <span bx-title>Modales</span>
     </div>
     <div bx-item b-go="content/header">
       <span bx-status>Beta</span>
-      <img bx-icon src="img/boxy.ico" />
+      <img bx-icon src="/img/boxy.ico" />
       <span bx-title>Headers</span>
     </div>
    

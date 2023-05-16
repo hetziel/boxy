@@ -1,14 +1,11 @@
-<div>
+<div class="h100" bg-img="img/md.jpg">
   <div b-view="header"></div>
-
   <div class="b-body">
-    <div class="b-main">
-      <div class="m1 w100">
-        <button b-go="home" class="b-btn" color="blue">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-      </div>
-
+    <div class="b-side" mobile="md" bg="white" bg-img="img/sidebar.jpg">
+      <div mobile-side hide><i class="fa-solid fa-arrows-left-right"></i></div>
+      <div b-view="desktop"></div>
+    </div>
+    <div class="b-main" bg-img="img/md.jpg">
       <div class="b-box m1">
         <div bx-head>BG-IMG</div>
 
@@ -21,7 +18,8 @@
           <div
             style="width: 200px; height: 200px"
             class="mb2"
-            bg-img="/assets/img/md.jpg"
+            bg-img="/img/test.jpg"
+            docs-bg-img-main
           ></div>
 
           <div class="col-lg-8 col-12">
