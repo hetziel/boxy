@@ -1,0 +1,66 @@
+<header class="b-header" mobile="md" bg="blue">
+    <div bx-logo>
+        <!-- <img src="./img/boxy.ico" alt="Boxy"> -->
+        <span>BOXY</span>
+    </div>
+
+    <div bx-content>
+        <button class="b-btn" color="pink">¿Que es Boxy?</button>
+        <button b-go class="b-btn" color="blue">Inicio</button>
+        <button b-go="start" class="b-btn" color="red">start</button>
+        <button class="b-btn" color="yellow" b-go="start">5 Us</button>
+        <button class="b-btn" color="Green">Send</button>
+
+        <div bx-mobile-bar>
+            <div>
+                <input class="b-input" type="text" />
+                <button class="b-btn" icon color="blue">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <h1>Este es un titulo</h1>
+
+            <div class="b-card" style="height: 400px" night one shadow hover blur>
+                <div bx-head capsule>
+                    <span>implementado</span>
+
+                    <span>x</span>
+                </div>
+
+                <div bx-content capsule>
+                    <!-- <img src="../img/test.jpg" capsule /> -->
+
+                    <div capsule>Esta es parte de una seccion</div>
+
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A vel quo
+                        doloribus voluptatibus non. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dignissimos architecto deleniti quidem laboriosam
+                        ea facilis ut nam, distinctio perspiciatis quod perferendis tempore
+                        fugiat autem repellendus voluptate fuga. Dolorem, optio.
+                        Dolores?</span>
+                    <div capsule>Esta es parte de una seccion</div>
+                    <div capsule>Esta es parte de una seccion</div>
+                </div>
+
+                <div bx-footer capsule>
+                    <span>implementado</span>
+
+                    <span>x</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div bx-fixed show>
+        <a href="https://github.com/hetziel/boxy" class="b-btn" icon color="default"><i
+                class="fa-brands fa-github"></i></a>
+        <button class="b-btn" color="default" b:click="changeLanguage('en')">
+            <i class="fa-solid fa-earth-americas"></i> English
+        </button>
+        <button class="b-btn" color="default" b:click="changeLanguage('es')">
+            <i class="fa-solid fa-earth-americas"></i> Español
+        </button>
+    </div>
+    <div bx-mobile open-nav>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</header>

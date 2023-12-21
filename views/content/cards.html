@@ -1,0 +1,292 @@
+<div>
+  <div b-view="header"></div>
+
+  <div class="b-body">
+    <div class="b-main">
+      <div class="m-1 w-100">
+        <button b-go="home" class="b-btn" color="blue">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+      <div class="div-12 div-md-4 p-1">
+        <section class="b-box h100" skin="blur" bg="light">
+          <div class="b-box-header"><span class="tt-md">Cards</span></div>
+          <div class="b-box-content">
+            <p>
+              Boxy actualmente está trabajando en este componente para tener una
+              comodidad al hacer tarjetas
+            </p>
+
+            <div class="d-flex jc-center">
+              <div class="b-card div-12 div-sm-8 div-md-12" bg="white">
+                <img bx-img src="/img/test.jpg" />
+                <div bx-head capsule>
+                  <span class="tt-sm">Tarjetas de boxy</span>
+                </div>
+                <div bx-content>
+                  Este es el contenido de la tarjeta que vas a aprender a
+                  constrruir con boxy
+                </div>
+                <div bx-footer>
+                  <div class="cont jc-around">
+                    <button class="b-btn-push mb-1" color="blue">Guardar</button>
+
+                    <button class="b-btn-push mb-1" color="red">Guardar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="div-12 div-md-8">
+        <div class="b-box m-1" skin="blur" bg="light">
+          <div class="b-box-header">
+            <span class="tt-md">¿Como usar?</span>
+          </div>
+          <div class="b-box-content">
+            <div class="b-table mb-2">
+              <table>
+                <tr bg="primary" tx="light">
+                  <th>Clases</th>
+                  <th>Atributos</th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      Simplemente añadiento una de las siguientes clases puedes
+                      darle el diseño a tu tarjeta
+                    </p>
+
+                    <ul>
+                      <li>b-card (Por defecto)</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <p>
+                      Al establecer algunas de las clases se puede utilizar los
+                      siguientes atributos
+                    </p>
+
+                    <ul>
+                      <li>shadow</li>
+                      <li>hover</li>
+                      <li>zoom</li>
+                      <li>night</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <p>
+              Este componente contiene subcomponentes que a su ves son
+              atributos, que solo funcionan si tiene la clase b-card como padre.
+            </p>
+
+            <div class="b-table mb-2">
+              <table>
+                <tr bg="primary" tx="light">
+                  <th>Subcomponentes</th>
+                  <th>Atributos</th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Establece un subcomponente añadiendo bx- como prefijo</p>
+
+                    <ul>
+                      <li>bx-img (Imagen de la tarjeta, opcional)</li>
+                      <li>bx-section (Contenido de la tarjeta, Requerido)</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <p>Atributos solo para subcomponentes</p>
+
+                    <ul>
+                      <li>capsule (Para bx-section, encapsula una sección)</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-12">
+        <div class="b-box m-1" skin="blur" bg="light">
+          <div class="b-box-header">
+            <span class="tt-md">Construyendo una tarjeta</span>
+          </div>
+          <div class="b-box-content">
+            <div class="div-12 div-sm-12 div-md-6 div-xl-4 p-1">
+              <p>
+                Este componente contiene subcomponentes que a su ves son
+                atributos, que solo funcionan si tiene la clase b-card como
+                padre.
+              </p>
+
+              <div class="mt-1">
+                <code code>
+                  &lt;div <span tx="info">class</span>="<span tx="warning"
+                    >b-card</span
+                  >"&gt;<br />
+                  &nbsp;&nbsp; &lt;img src="..."
+                  <span tx="pink">bx-img</span>/&gt;<br />
+                  &nbsp;&nbsp; &lt;div <span tx="pink">bx-section</span>&gt; ...
+                  &lt;/div&gt;<br />
+                  &lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            <div class="div-12 div-sm-12 div-md-6 div-xl-4 p-1 flex jc-center">
+              <div class="b-card" bg="white" style="width: 18rem">
+                <img bx-img src="/img/test.jpg" />
+                <div bx-section>Hola soy una tarjeta</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="b-box m-1">
+          <div class="b-box-header">
+            <span class="tt-md">Atributos de las tarjetas</span>
+          </div>
+          <div class="b-box-content">
+            <div class="div-12 div-sm-12 div-md-6 div-xl-4 p-1 m-fc">
+              <p>
+                Añade una sombra a la tarjeta con
+                <span tx="dark-pink">shadow</span>
+              </p>
+
+              <div class="mt-1 mb-1 w-100">
+                <code code>
+                  &lt;div <span tx="info">class</span>="<span tx="warning"
+                    >b-card</span
+                  >" <span tx="pink">shadow</span>&gt;<br />
+                </code>
+              </div>
+
+              <div class="b-card" bg="white" style="width: 18rem" shadow>
+                <img bx-img src="/img/test.jpg" />
+                <div bx-section>Hola soy una tarjeta</div>
+              </div>
+            </div>
+
+            <div class="div-12 div-sm-12 div-md-6 div-xl-4 p-1 m-fc">
+              <p>
+                Añade un efecto hover cuando pasas sobre la tarjeta con
+                <span tx="dark-pink">hover</span>
+              </p>
+
+              <div class="mt-1 mb-1 w-100">
+                <code code>
+                  &lt;div <span tx="info">class</span>="<span tx="warning"
+                    >b-card</span
+                  >" <span tx="pink">hover</span>&gt;<br />
+                </code>
+              </div>
+
+              <div class="b-card" bg="white" style="width: 18rem" hover>
+                <img bx-img src="/img/test.jpg" />
+                <div bx-section>Hola soy una tarjeta</div>
+              </div>
+            </div>
+
+            <div class="div-12 div-sm-12 div-md-6 div-xl-4 p-1 m-fc">
+              <p>
+                Añade un efecto zoom cuando pasas sobre la tarjeta con
+                <span tx="dark-pink">zoom</span>
+              </p>
+
+              <div class="mt-1 mb-1 w-100">
+                <code code>
+                  &lt;div <span tx="info">class</span>="<span tx="warning"
+                    >b-card</span
+                  >" <span tx="pink">zoom</span>&gt;<br />
+                </code>
+              </div>
+
+              <div class="b-card" bg="white" style="width: 18rem" zoom>
+                <img bx-img src="/img/test.jpg" />
+                <div bx-section>Hola soy una tarjeta</div>
+              </div>
+            </div>
+
+            <div class="div-12 div-sm-12 div-md-6 div-xl-4 p-1 m-fc">
+              <p>Lo mejor de todo es que puedes usarlos juntos</p>
+
+              <div class="mt-1 mb-1 w-100">
+                <code code>
+                  &lt;div <span tx="info">class</span>="<span tx="warning"
+                    >b-card</span
+                  >" <span tx="pink">shadow</span>
+                  <span tx="pink">hover</span>
+                  <span tx="pink">zoom</span>&gt;<br />
+                </code>
+              </div>
+
+              <div
+                class="b-card"
+                bg="white"
+                style="width: 18rem"
+                shadow
+                hover
+                zoom
+              >
+                <img bx-img src="/img/test.jpg" />
+                <div bx-section>Hola soy una tarjeta</div>
+              </div>
+            </div>
+
+            <div class="div-12 div-sm-12 div-md-6 div-xl-4 p-1 m-fc">
+              <p>
+                El atributo <span tx="dark-pink">night</span> se utiliza cuando
+                tengas un fondo oscuro
+              </p>
+
+              <div class="mt-1 mb-1 w-100">
+                <code code>
+                  &lt;div <span tx="info">class</span>="<span tx="warning"
+                    >b-card</span
+                  >" <span tx="pink">shadow</span>
+                  <span tx="pink">hover</span>
+                  <span tx="pink">zoom</span>&gt;<br />
+                </code>
+              </div>
+
+              <div class="b-card" style="width: 18rem" bg="dark-gray" night>
+                <img bx-img src="/img/test.jpg" />
+                <div bx-section>Hola soy una tarjeta</div>
+              </div>
+            </div>
+            <div
+              class="div-12 div-sm-12 div-md-6 div-xl-4 p-1 m-fc"
+              bg-img="/img/lg.jpg"
+            >
+              <p bg="white">
+                El atributo <span tx="dark-pink">blur</span> se utiliza cuando
+                tengas un fondo oscuro
+              </p>
+
+              <div class="mt-1 mb-1 w-100">
+                <code code>
+                  &lt;div <span tx="info">class</span>="<span tx="warning"
+                    >b-card</span
+                  >" <span tx="pink">blur</span>&gt;<br />
+                </code>
+              </div>
+
+              <div class="b-card" style="width: 18rem" blur>
+                <img bx-img src="/img/test.jpg" />
+                <div bx-section>Hola soy una tarjeta</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<div bx-content>
+  <div class="b-desktop">
+    <foreach value="category in desktop">
+      <div bx-space tx="white">{{ category.title }}</div>
+
+      <foreach value="item in desktop.{{key}}.content">
+        <div bx-item b-go="{{ item.link }}">
+          <if value="{{ item.status }}">
+            <span bx-status>{{ item.status }}</span>
+          </if>
+          <img bx-icon b:src="/{{ item.image }}" />
+          <span bx-title>{{ item.title }}</span>
+        </div>
+      </foreach>
+    </foreach>
+
+    <div bx-item b-go="second">
+      <span bx-status>Beta</span>
+      <img bx-icon src="/img/boxy.ico" />
+      <span bx-title>Test</span>
+    </div>
+    <div bx-item b-go="content/cards">
+      <span bx-status>Beta</span>
+      <img bx-icon src="/img/boxy.ico" />
+      <span bx-title>@(home.cards)</span>
+    </div>
+    <div bx-item b-go="content/colors">
+      <span bx-status>Beta</span>
+      <img bx-icon src="/img/boxy.ico" />
+      <span bx-title>Colores</span>
+    </div>
+    <div bx-item b-go="content/typography">
+      <span bx-status>Beta</span>
+      <img bx-icon src="/img/boxy.ico" />
+      <span bx-title>Tipografía</span>
+    </div>
+    <div bx-item b-go="content/modals">
+      <span bx-status>Beta</span>
+      <img bx-icon src="/img/boxy.ico" />
+      <span bx-title>Modales</span>
+    </div>
+    <div bx-item b-go="content/header">
+      <span bx-status>Beta</span>
+      <img bx-icon src="/img/boxy.ico" />
+      <span bx-title>Headers</span>
+    </div>
+  </div>
+</div>

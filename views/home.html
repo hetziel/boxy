@@ -1,0 +1,63 @@
+<div class="h100" bg-img="img/md.jpg">
+
+  <div b-view="header"></div>
+
+  <div class="b-body">
+    <div class="b-side" mobile="md" bg="white" bg-img="img/boxes2.jpg">
+      <div mobile-side hide><i class="fa-solid fa-arrows-left-right"></i></div>
+      <div b-view="desktop"></div>
+    </div>
+    <div class="b-main" bg-img="img/md.jpg">
+      <div
+        bg="white"
+        class="jc-center"
+        style="display: flex; align-items: center"
+      >
+        <div class="div-8 div-lg-4 -p1">
+          <img src="img/Team_work.svg" class="w100" />
+        </div>
+
+        <div class="div-12 div-lg-6 p-2">
+          <h1 class="tc">@(home.welcome)</h1>
+
+          <span class="tt-md tc" tx="blue">@(home.what_is)</span>
+          <p tx="secondary" class="tc">@(home.desc)</p>
+
+          <div class="w-100 tc">
+            <button b-go="start" class="b-btn" color="green" rd="all">
+              @(home.start)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="cont jc-center" style="align-items: stretch">
+        <div class="div-12">
+          <div class="b-box m1" skin="blur" bg="light">
+            <div class="b-box-header">
+              <span class="tt-md" tx="dark">Nuevas características</span>
+            </div>
+            <div class="b-box-content box">
+              <div class="cont jc-center mt1">
+                <p>
+                  Por motivos de actualización de la version a Boxy 0.2
+                  ocultamos algunas características para mejorar el diseño y la
+                  documentación.
+                </p>
+                <a href="pages/buttons.html" class="b-btn-push" color="red"
+                  >Botones</a
+                >
+                <a href="pages/cards.html" class="b-btn-push" color="orange"
+                  >Tarjetas</a
+                >
+                <a href="pages/grid.html" class="b-btn-push" color="purple"
+                  >Sistema Grid</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

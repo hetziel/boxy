@@ -1,0 +1,192 @@
+<div class="h100" bg-img="img/md.jpg">
+    <div b-view="header"></div>
+
+    <div class="b-body">
+        <div class="b-side" mobile="md" bg="white" bg-img="img/boxes2.jpg">
+            <div mobile-side hide><i class="fa-solid fa-arrows-left-right"></i></div>
+            <div b-view="desktop"></div>
+        </div>
+        <div class="b-main" bg-img="img/md.jpg">
+
+            <div class="b-card m-2" one shadow bg="white 4" blur>
+                <div bx-head>
+                    <span class="tt-md">{{ title }}</span>
+                </div>
+                <div bx-content>
+                    <p>Para uso de este componente se utiliza la estructura
+                        establecida: <br>
+                        <br>
+                        <h4>Estructura de la modal</h4>
+
+                        <ul>
+                            <li><span tx="danger" class="fw-bold">b-modal</span>
+                                es la la clase principal y envoltura de la modal
+                                la cual podemos dar
+                                click afuera de la modal y esta se cerrará.
+
+                                <br>
+                                <br>
+                                Los sub-componentes de la modal tienen que ser
+                                atributos:
+                                <ul>
+                                    <li>
+                                        <span tx="danger" class="fw-bold">bx-content</span>
+                                        es el componente solido de la modal
+                                        <ul>
+                                            <li>
+                                                <span tx="danger"
+                                                    class="fw-bold">bx-head</span>
+                                                es el espacio donde va el título
+                                                de la modal y botón de cierre.
+                                            </li>
+                                            <li>
+                                                <span tx="danger"
+                                                    class="fw-bold">bx-body</span>
+                                                es el espacio donde va el cuerpo
+                                                de la modal
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h4>Acciones de modal (Atributos) </h4>
+                        <ul>
+                            <li>
+                                <span tx="blue" class="fw-bold">open-modal="identificador"</span>
+                                es un identificador para activar la modal con el
+                                mismo nombre.
+                            </li>
+                            <li>
+                                <span tx="blue" class="fw-bold">modal="identificador"</span>
+                                es el receptor del activador que recibe el
+                                identificador.
+                            </li>
+                            <li>
+                                <span tx="blue" class="fw-bold">close-modal</span>
+                                es la acción de cerrar la modal, puede colocarse
+                                tanto
+                                en <span tx="danger" class="fw-bold">bx-head</span>
+                                como en
+                                <span tx="danger" class="fw-bold">bx-body</span>
+                            </li>
+                            <li>
+                                <span tx="blue" class="fw-bold">maximize-modal</span>
+                                es la acción de maximizar la modal, puede
+                                colocarse tanto
+                                en <span tx="danger" class="fw-bold">bx-head</span>
+                                como en
+                                <span tx="danger" class="fw-bold">bx-body</span>
+                            </li>
+                        </ul>
+
+                    </p>
+
+                    <h4>Configurando la modal</h4>
+                    <p>Configura el activador de la modal añadiendo un
+                        identificador en <code code short tx="white">open-modal</code>
+                        y añadiendo el identificador en el atributo <code code
+                            short tx="white">modal</code> en la modal.</p>
+
+                    <div class="b-windows">
+                        <div bx-head>
+                            <span bx-title>Vista Previa</span>
+                            <span bx-title>Código activador</span>
+                            <span bx-title>Código modal</span>
+                        </div>
+
+                        <div bx-content class="p-1 tc">
+                            <button class="b-btn" ripple color="primary"
+                                open-modal="ejemplo1">Abrir modal</button>
+                        </div>
+
+                        <div bx-content>
+                            <div b-code="modal-1"></div>
+                        </div>
+                        <div bx-content>
+                            <div b-code="modal-1-1"></div>
+                        </div>
+                    </div>
+
+                    <h4>Personalización</h4>
+                    <p class="tt-md">Posicionamiento</p>
+                    <p>La ubicación de la modal es importante en muchas
+                        ocasiones y Boxy lo hace en modo teclado numérico de
+                        teléfonos con <span class="fw-bold" tx="blue">position=""</span>
+                        con valores del 1 al 9</p>
+
+                    <div class="b-windows">
+                        <div bx-head>
+                            <span bx-title>Vista Previa</span>
+                            <span bx-title>Código</span>
+                            <span bx-title>Tercera Ventana</span>
+                        </div>
+
+                        <div bx-content class="p-1 tc">
+                            <button class="b-btn mb-1" color="primary"
+                                open-modal="pos1">Posición 1</button>
+                            <button class="b-btn mb-1" color="primary"
+                                open-modal="pos2">Posición 2</button>
+                            <button class="b-btn mb-1" color="primary"
+                                open-modal="pos3">Posición 3</button> <br>
+                            <button class="b-btn mb-1" color="primary"
+                                open-modal="pos4">Posición 4</button>
+                            <button class="b-btn mb-1" color="primary"
+                                open-modal="pos5">Posición 5</button>
+                            <button class="b-btn mb-1" color="primary"
+                                open-modal="pos6">Posición 6</button> <br>
+                            <button class="b-btn mb-1" color="primary"
+                                open-modal="pos7">Posición 7</button>
+                            <button class="b-btn mb-1" color="primary"
+                                open-modal="pos8">Posición 8</button>
+                            <button class="b-btn mb-1" color="primary"
+                                open-modal="pos9">Posición 9</button>
+                        </div>
+
+                        <div bx-content class="h-8">
+                            <div b-code="modals/positions"></div>
+
+                        </div>
+
+                        <div bx-content>
+                            <div b-code="modals/positions-1"></div>
+                        </div>
+                    </div>
+
+                    
+                    <p class="tt-md">Estilos</p>
+                    <p>Para cambiar la apariencia de entrada y la modal se utiliza el atributo <span class="fw-bold" tx="blue">skin=""</span>
+                    con estos valores:</p>
+                    <ul>
+                        <li>blur (efecto de borroso)</li>
+                        <li>fade (suavidad de entrada)</li>
+                    </ul>
+                    <p>Además de la apariencia se puedes añadir efectos de entrada y salida con el atributo <span class="fw-bold" tx="blue">fx=""</span>
+                    con estos valores:</p>
+                    <ul>
+                        <li>in-out (agranda y reduce)</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="b-modal" modal="ejemplo1" opening="blur">
+            <div bx-content>
+                <div bx-head>
+                    <span bx-title>Una triste historia</span>
+                    <button class="b-btn-icon" maximize-modal>+</button>
+                    <button class="b-btn-icon" close-modal>&times;</button>
+                </div>
+                <div class="b-modal-body">
+                    <p>
+                        Mi billetera <br>
+                        es como una cebolla <br>
+                        al abrirla me hace llorar.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div b-view="modals/positions"></div>
+    </div>

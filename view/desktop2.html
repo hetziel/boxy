@@ -1,0 +1,17 @@
+<div bx-content>
+  <div bg="black"><span tx="white" id="time"></span></div>
+  <div class="b-desktop">
+    <foreach value="item in this.desktop">
+      <if value="{{ item.type }} == 1">
+        <p tx="white">{{ item.type}}</p>
+      </if>
+      <div bx-item b-go="{{ item.link }}">
+        <if value="{{ item.status }}">
+          <span bx-status>{{ item.status }}</span>
+        </if>
+        <img bx-icon b:src="/{{ item.image }}" />
+        <span bx-title>{{ item.title }}</span>
+      </div>
+    </foreach>
+  </div>
+</div>

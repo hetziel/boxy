@@ -1,0 +1,139 @@
+<div b-view="portfolio/header"></div>
+
+<div class="b-body">
+
+  <div b-view="portfolio/inicio"></div>
+
+  <div id="sobremi2" class="h-100 w100" bg="dark-bgray" tx="white">
+    <div container="md" class=" p4">
+      <div>
+        <h2 class="tc tx-10 f-1">Sobre Mí</h2>
+
+        <p class="tx-1"><span>Hola, soy Nick Perez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti
+          repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+      </div>
+
+      <div class="cont-2">
+        <div class="div">
+          <h3 class="tx-6 f-1">Datos Personales</h3>
+
+          <ul>
+            <foreach value="item in this.personalData">
+              <li>
+                <strong>{{ item.title }}</strong>
+                <span>{{ item.value }}</span>
+              </li>
+            </foreach>
+          </ul>
+
+        </div>
+        <div class="div">
+          <h3 class="tx-6 f-1">Intereses</h3>
+          <div class="flex wrap">
+            <foreach value="item in this.intereses">
+              <div class="wh-1 m1 rd-lg flex ai-center jc-center fd-c" bg="white 10">
+                <i class="tx-6 mb1 {{ item.icon }}"></i>
+                <span>{{ item.title }}</span>
+              </div>
+            </foreach>
+          </div>
+        </div>
+      </div>
+
+      <button class="b-btn-gate" color="turq" dir="4">
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="sobremi" class=" h-100 flex w100 jc-center ai-center sobremi">
+    <div class="contenido-seccion">
+      <h2>Sobre Mí</h2>
+      <p><span>Hola, soy Nick Perez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde
+        soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid
+        debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+
+      <div class="fila">
+        <!-- datos personales -->
+        <div class="col">
+          <h3>Datos Personales</h3>
+          <ul>
+            <li>
+              <strong>Cumpleaños</strong>
+              15-01-1980
+            </li>
+            <li>
+              <strong>Teléfono</strong>
+              2555 5454545
+            </li>
+            <li>
+              <strong>Email</strong>
+              cw@example.com
+            </li>
+            <li>
+              <strong>Website</strong>
+              www.example.com
+            </li>
+            <li>
+              <strong>Dirección</strong>
+              123 San Luis, Argentina
+            </li>
+            <li>
+              <strong>Cargo</strong>
+              <span>FREELANCE</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- intereses -->
+        <div class="col">
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+            <div class="interes">
+              <i class="fa-solid fa-gamepad"></i>
+              <span>JUEGOS</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-headphones"></i>
+              <span>MUSICA</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-plane"></i>
+              <span>VIAJAR</span>
+            </div>
+            <div class="interes">
+              <i class="fa-brands fa-apple"></i>
+              <span>MAC OS</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-person-hiking"></i>
+              <span>DEPORTE</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-book"></i>
+              <span>LIBROS</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-car"></i>
+              <span>AUTOS</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-camera"></i>
+              <span>FOTOS</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <button>
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
+    </div>
+  </div>
+  <div id="contacto" class=" h-100  bu-bg flex w100 jc-center ai-center">
+    <span>contacto :v</span>
+  </div>
+</div>

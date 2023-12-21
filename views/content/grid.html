@@ -1,0 +1,154 @@
+
+  <div b-view="header"></div>
+  <div class="b-body">
+    <div class="b-side" mobile="md" bg="white" bg-img="/img/sidebar.jpg">
+      <div mobile-side hide><i class="fa-solid fa-arrows-left-right"></i></div>
+      <div b-view="desktop"></div>
+    </div>
+    <div class="b-main" bg-img="/img/md.jpg">
+      <div class="b-box m-1">
+        <div bx-head>@(home.grid)</div>
+    
+        <div bx-content>
+          <p>
+            Ejemplos:
+    
+            <br />
+    
+            utilizando la clase <code code short>cont</code> como contenedor <br />
+            y la clase <code code short>div</code> como la división que se adapta al
+            contenedor
+          </p>
+    
+          <div class="tc mb-5 cont" docs-grid>
+            <div bg="red" class="div">1</div>
+            <div bg="blue" class="div">2</div>
+            <div class="div">3</div>
+            <div class="div">4</div>
+            <div class="div">5</div>
+            <div class="div">6</div>
+            <div class="div">7</div>
+            <div class="div">8</div>
+            <div class="div">9</div>
+            <div class="div">10</div>
+            <div class="div">11</div>
+            <div class="div">12</div>
+          </div>
+    
+          <div b-code="grid"></div>
+    
+          <p>
+            Puedes adaptar la cantidad de divisiones que se mostrarán en cada fila desde el
+            contenedor utilizando desde <code code short>cont-1</code> hasta
+            <code code short>cont-12</code>
+    
+            <br />
+            <br />
+    
+            Aquí un ejemplo utilizando <code code short>cont-5</code>
+          </p>
+    
+          <div class="tc mb-5 cont-5" docs-grid>
+            <div bg="red" class="div">1</div>
+            <div bg="blue" class="div">2</div>
+            <div class="div">3</div>
+            <div class="div">4</div>
+            <div class="div">5</div>
+            <div class="div">6</div>
+            <div class="div">7</div>
+            <div class="div">8</div>
+            <div class="div">9</div>
+            <div class="div">10</div>
+            <div class="div">11</div>
+            <div class="div">12</div>
+          </div>
+    
+          <div b-code="grid2"></div>
+    
+          <p>
+            Puedes adaptar el tamaño de divisiones en las filas utilizando desde <code code short>div-1</code> hasta
+            <code code short>div-12</code>
+    
+            <br />
+            <br />
+    
+            Aquí un ejemplo utilizando dos div con <code code short>div-6</code>
+          </p>
+    
+          <div class="tc mb-5 cont-5" docs-grid>
+            <div class="div-6">1</div>
+            <div class="div-6">2</div>
+            <div class="div">3</div>
+            <div class="div">4</div>
+            <div class="div">5</div>
+            <div class="div">6</div>
+            <div class="div">7</div>
+            <div class="div">8</div>
+            <div class="div">9</div>
+            <div class="div">10</div>
+            <div class="div">11</div>
+            <div class="div">12</div>
+          </div>
+    
+          <div b-code="grid3"></div>
+          <p>
+            Ejemplos:
+    
+            <br />
+    
+            utilizando la clase <code code short>cont-sm-{n}</code> <code code short>cont-md-{n}</code> <code code short>cont-lg-{n}</code>
+            <code code short>cont-xl-{n}</code> puedes variar la cantidad de <code code short>div</code> en una fila dependiendo del tamaño de la pantalla en orden de Mobile First. <br />
+          <br>
+            Ejemplo: Para que veas resultado dimensiona el tamaño de la ventana del navegador.
+          </p>
+    
+          <div
+            class="tc mb-5 cont-2 cont-sm-4 cont-md-6 cont-lg-8 cont-xl-10" docs-grid>
+            <div class="div">1</div>
+            <div class="div">2</div>
+            <div class="div">3</div>
+            <div class="div">4</div>
+            <div class="div">5</div>
+            <div class="div">6</div>
+            <div class="div">7</div>
+            <div class="div">8</div>
+            <div class="div">9</div>
+            <div class="div">10</div>
+            <div class="div">11</div>
+            <div class="div">12</div>
+          </div>
+    
+          <div b-code="grid4"></div>
+    
+          <p>
+            Ejemplos:
+    
+            <br />
+    
+            utilizando la clase <code code short>div-sm-{n}</code> <code code short>div-md-{n}</code> <code code short>div-lg-{n}</code>
+            <code code short>div-xl-{n}</code> puedes variar la el tamaño del <code code short>div</code> dependiendo del tamaño de la pantalla en orden de Mobile First. <br />
+          <br>
+            Ejemplo: Para que veas resultado dimensiona el tamaño de la ventana del navegador.
+          </p>
+    
+          <div
+            class="tc mb-5 cont-2 cont-sm-4 cont-md-6 cont-lg-8 cont-xl-10" docs-grid>
+            <div class="div-12 div-sm-9 div-md-6 div-lg-3 div-xl-1">1</div>
+            <div class="div">2</div>
+            <div class="div">3</div>
+            <div class="div">4</div>
+            <div class="div">5</div>
+            <div class="div">6</div>
+            <div class="div">7</div>
+            <div class="div">8</div>
+            <div class="div">9</div>
+            <div class="div">10</div>
+            <div class="div">11</div>
+            <div class="div">12</div>
+          </div>
+    
+          <div b-code="grid5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
